@@ -233,9 +233,9 @@ span.answer{
   font-family: arial;
   color: white;
 }
-.projectlist img{
+#projectlist img{
   height: 100px;
 }
-.projectlist video{
+#projectlist video{
   height: 500px;
 }
