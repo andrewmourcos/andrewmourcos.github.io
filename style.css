@@ -180,7 +180,7 @@ body{
   font-family: Georgia;
   padding: 2vh;
   line-height: 1.5;
-  font-size: 2.3vh;
+  font-size: 2.5vh 2.5vw;
 }
 .sheet2 a{
   color: orange;
@@ -229,13 +229,48 @@ span.answer{
 }
 
 .sheet4{
-  background-color: royalblue;
+  padding-top: 0;
+  background-color: #2b3856;
   font-family: arial;
+  color: black;
+  overflow: hidden;
+}
+.sheet4 h1{
+  padding-left: 40px;
+  padding-top: 40px;
   color: white;
 }
-#projectlist img{
-  height: 100px;
+.projectlist{
+  width: 50%;
+  float: left;
+  border-right-color: white;
 }
-#projectlist video{
-  height: 500px;
+.projectlist li{
+  border-radius: 5px;
+  list-style: none;
+  background-color: #fff1;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+.projectlist h4{
+  color: white;
+}
+.projectlist li:hover{
+  background-color: #fff9;
+}
+.projectlist img{
+  display: inline;
+  width: 20%;
+}
+.projectlist p{
+  color: black;
+  display: inline;
+  float: right;
+  width: 78%;
+}
+#imgspace{
+  max-width: 45%;
+  display: inline;
+  float: right;
+  padding-right: 20px;
 }

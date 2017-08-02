@@ -96,7 +96,7 @@
           a grade 11 student interested in STEM.
           I love taking on leadership roles where
           I can inspire other youth and that's why I urge
-          you to discover my <a href="#projectlist">involvements section</a>
+          you to discover my <a href="#proj">involvements section</a>
           to see for yourself!
         </p>
       </div>
@@ -146,11 +146,11 @@
       </div>
     </div>
 
-    <div class="sheet4">
+    <div class="sheet4" id="proj">
       <h1>Projects and Involvements</h1>
-        <ul id="projectlist">
-          <li>
-            <h4>Quantum Physics team video</h4>
+        <ul class="projectlist">
+          <li id="physics">
+            <h4>Quantum Physics team video (2017)</h4>
             <p>In order to demonstrate our quantum physics team's
               accelerator experiment, we made a video and a report.
               I was in charge of directing the video and received
@@ -159,8 +159,8 @@
             </p>
             <img src="Snolab.JPG" alt="">
           </li>
-          <li>
-            <h4>Computer Vision: Self Driving Car</h4>
+          <li id="IARRC">
+            <h4>Computer Vision: Self Driving Car (2017)</h4>
             <p>For a competition against university teams, I made
               a fully autonomous race car that detects road lines
               quite efficiently (won 2nd place).
@@ -168,16 +168,16 @@
             <img src="AutonomousCar.gif" alt="">
           </li>
 
-          <li>
+          <li id="website">
             <h4>My Website (2017)</h4>
             <p>This website was my first real HTML/CSS/JS project.
               I coded the website from scratch and aimed for
               simplicity ;)
             </p>
-            <video src="website.mov" autoplay poster="posterimage.jpg" loop muted>
+            <img src="#" alt="">
             </video>
           </li>
-          <li>
+          <li id="mtr">
             <h4>(Almost) Zero Friction Motor (2016)</h4>
             <p>After learning about electromagnetism in physics
             class, a couple friends and I decided to make a
@@ -185,15 +185,15 @@
             </p>
             <img src="Motor.png" alt="">
           </li>
-          <li>
+          <li id="ppcar">
             <h4>Ultrasonic sensor car (2014)</h4>
             <p>A car built completely from scratch that uses ultrasonic sensors
             to follow paths made by cones/walls and can even parallel
             park! Won best project for the International Baccaleaureate
             Personal Project.</p>
-            <video src="parking.3gp" autoplay poster="posterimage.jpg" loop muted></video>
+            <img src="#" alt="">
           </li>
-          <li>
+          <li id="LEDMatrix">
             <h4>My first electronics project: LED Matrix (2012)</h4>
             <p>My first electronics project was a 9x10 LED Matrix
               (this image is a different version), that I built with
@@ -202,8 +202,34 @@
             </p>
             <img src="LEDMatrix2.gif" alt="">
           </li>
-
         </ul>
+
+        <div class="ProjectZoom">
+          <h3 style="color:white;">Projects</h3>
+          <hr>
+          <img id="imgspace" src="#" alt="imgspace">
+          <script>
+            $("#LEDMatrix").click(function(){
+              $("#imgspace").attr("src","LEDMatrix2.gif");
+            });
+            $("#ppcar").click(function(){
+              $("#imgspace").attr("src","://rlv.zcache.com/the_original_smiley_face_classic_round_sticker-r8c41697f171a4d97975ffd6ce27b8c3e_v9waf_8byvr_324.jpg");
+            });
+            $("#mtr").click(function(){
+              $("#imgspace").attr("src","Motor.png");
+            });
+            $("#website").click(function(){
+              $("#imgspace").attr("src","/Volumes/SuperBook/Images/Screenshot_2017-02-12-18-14-04.png");
+            });
+            $("#IARRC").click(function(){
+              $("#imgspace").attr("src","AutonomousCar.gif");
+            });
+            $("#physics").click(function(){
+              $("#imgspace").attr("src","Snolab.JPG");
+            });
+
+            </script>
+        </div>
     </div>
 
 <!-- scripts -->
