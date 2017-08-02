@@ -243,7 +243,6 @@ span.answer{
 .projectlist{
   width: 50%;
   float: left;
-  border-right-color: white;
 }
 .projectlist li{
   border-radius: 5px;
@@ -267,6 +266,10 @@ span.answer{
   display: inline;
   float: right;
   width: 78%;
+}
+.projectlist a{
+  text-decoration: none;
+  color: darksalmon;
 }
 #imgspace{
   width: 45%;
