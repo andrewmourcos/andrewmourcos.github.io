@@ -60,9 +60,9 @@
     <div class="sheet1" id="particles-js">
       <ul class="nav">
         <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="#next">ABOUT</a></li>
         <li><a href="#">POSTS</a></li>
-        <li><a href="#">PROJECTS</a></li>
+        <li><a href="#proj">PROJECTS</a></li>
         <li><a href="CV.pdf">CV</a></li>
       </ul>
       <img id="profile" src="Profile.png" >
@@ -106,7 +106,7 @@
       </div>
     </div>
 
-    <div class="sheet3" id="next">
+    <div class="sheet3">
       <p>Hello World! I'm Andrew Mourcos.</p>
       <div class="code">
         <div class="terminal">
@@ -128,9 +128,8 @@
           <br>
           <span class="answer">
             &emsp;&emsp;==> [<a href="https://www.facebook.com/profile.php?id=100015321618737">"Facebook"</a>
-            , <a href="https://www.linkedin.com/in/andrew-mourcos-007875145/">"LinkedIn"</a>
             , <a href="https://www.instagram.com/andy._.roo/">"@andy._.roo"</a>
-            , <a href="https://github.com/Andrew7-M">GitHub</a>]
+            , <a href="https://github.com/andrewmourcos">"GitHub"</a>]
             <br>
             <br>
           </span>
@@ -152,9 +151,13 @@
 
     <div class="sheet4" id="proj">
       <h1>Projects</h1>
+      <p id="descrip">Below, I've included some of my past projects
+      that I had tons of fun making. I encourage others to look at these
+      examples and try to make their own versions! If you have any
+      questions, please reach out to me by email!</p>
         <ul class="projectlist">
           <li id="physics">
-            <h4>Quantum Physics team video (2017)</h4>
+            <h4>Quantum Physics team video (16)</h4>
             <p>In order to demonstrate our quantum physics team's
               accelerator experiment, we made a <a href="https://www.youtube.com/watch?v=ckhPq1he3ow">video</a> and a report.
               I was thrilled to be directing the video portion of the project!
@@ -162,7 +165,7 @@
             <img src="Snolab.JPG" alt="">
           </li>
           <li id="IARRC">
-            <h4>Computer Vision: Self Driving Car (2017)</h4>
+            <h4>Computer Vision: Self Driving Car (16)</h4>
             <p>For a competition against university teams, I made
               a fully autonomous race car that detects road lines
               quite efficiently (won 2nd place).
@@ -171,7 +174,7 @@
           </li>
 
           <li id="website">
-            <h4>My Website (2017)</h4>
+            <h4>My Website (16)</h4>
             <p>This website was my first real HTML/CSS/JS project.
               I made the website from scratch and aimed for
               simplicity ;)
@@ -180,7 +183,7 @@
             </video>
           </li>
           <li id="mtr">
-            <h4>(Almost) Zero Friction Motor (2016)</h4>
+            <h4>(Almost) Zero Friction Motor (15)</h4>
             <p>After learning about electromagnetism in physics
             class, a couple friends and I decided to make a
             motor with a levitating shaft (using magnets). It uses
@@ -189,7 +192,7 @@
             <img src="Motor.png" alt="">
           </li>
           <li id="ppcar">
-            <h4>Ultrasonic sensor car (2014)</h4>
+            <h4>Ultrasonic sensor car (13)</h4>
             <p>A car built completely from scratch that uses ultrasonic sensors
             to follow paths made by cones/walls and can even parallel
             park! Won best project for the International Baccaleaureate
@@ -197,11 +200,10 @@
             <img src="parking.gif" alt="">
           </li>
           <li id="LEDMatrix">
-            <h4>My first electronics project: LED Matrix (2012)</h4>
-            <p>My first electronics project was a 9x10 LED Matrix
-              (this image is a different version), that I built with
-              my friend who taught me how to solder and program a
-              microcontroller.
+            <h4>My first electronics project: LED Matrix (11)</h4>
+            <p>My first electronics project was an LED Matrix,
+              that I built with my friend who taught me how to
+              solder and program a microcontroller.
             </p>
             <img src="LEDMatrix2.gif" alt="">
           </li>
@@ -210,7 +212,7 @@
         <div class="ProjectZoom">
           <h3 style="color:white;">Projects</h3>
           <hr>
-          <img id="imgspace" src="#" alt="click a project">
+          <img id="imgspace">
           <script>
             $("#LEDMatrix").click(function(){
               $("#imgspace").attr("src","LEDMatrix2.gif");

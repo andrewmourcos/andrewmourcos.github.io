@@ -236,13 +236,23 @@ span.answer{
   overflow: hidden;
 }
 .sheet4 h1{
-  padding-left: 40px;
-  padding-top: 40px;
+  padding: 40px;
+  padding-bottom: 0;
   color: white;
+  text-align: center;
+}
+#descrip{
+  line-height: 2;
+  font-family: sans-serif;
+  padding: 0% 30% 1% 30%;
+  color: white;
+  text-align: center;
 }
 .projectlist{
-  width: 50%;
+  width: 40%;
   float: left;
+  padding: 0% 5% 0% 5%;
+  margin: 0;
 }
 .projectlist li{
   border-radius: 5px;
@@ -253,15 +263,20 @@ span.answer{
 }
 .projectlist h4{
   color: white;
+  padding-bottom: 1%;
+  margin: 0;
 }
 .projectlist li:hover{
   background-color: #fff9;
 }
 .projectlist img{
   display: inline;
+  height: 90%;
   width: 20%;
 }
 .projectlist p{
+  margin: 0;
+  padding: 0;
   color: black;
   display: inline;
   float: right;
@@ -275,5 +290,5 @@ span.answer{
   width: 45%;
   display: inline;
   float: right;
-  padding-right: 20px;
+  padding-right: 1%;
 }
