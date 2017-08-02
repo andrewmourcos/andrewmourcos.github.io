@@ -177,7 +177,7 @@ body{
 }
 .sheet2 p{
   color: white;
-  font-family: Georgia;
+  font-family: Arial;
   padding: 2vh;
   line-height: 1.5;
   font-size: 2.5vh 2.5vw;
@@ -269,7 +269,7 @@ span.answer{
   width: 78%;
 }
 #imgspace{
-  max-width: 45%;
+  width: 45%;
   display: inline;
   float: right;
   padding-right: 20px;
