@@ -56,13 +56,11 @@
     </script>
   </head>
   <body>
-    <!-- <audio src="bensound-cute.mp3" autoplay loop></audio> -->
     <div class="sheet1" id="particles-js">
       <ul class="nav">
         <li><a href="#">HOME</a></li>
         <li><a href="#next">ABOUT</a></li>
         <li><a href="#">POSTS</a></li>
-        <li><a href="#proj">PROJECTS</a></li>
         <li><a href="CV.pdf">CV</a></li>
       </ul>
       <img id="profile" src="Profile.png" >
@@ -151,13 +149,13 @@
 
     <div class="sheet4" id="proj">
       <h1>Projects</h1>
-      <p id="descrip">Below, I've included some of my past projects
-      that I had tons of fun making. I encourage others to look at these
+      <p id="descrip">Below, I've included a sample of some of my past projects
+      that I've had tons of fun making. I encourage others to look at these
       examples and try to make their own versions! If you have any
       questions, please reach out to me by email!</p>
         <ul class="projectlist">
           <li id="physics">
-            <h4>Quantum Physics team video (16)</h4>
+            <h4>Quantum Physics team video (age 16)</h4>
             <p>In order to demonstrate our quantum physics team's
               accelerator experiment, we made a <a href="https://www.youtube.com/watch?v=ckhPq1he3ow">video</a> and a report.
               I was thrilled to be directing the video portion of the project!
@@ -165,7 +163,7 @@
             <img src="Snolab.JPG" alt="">
           </li>
           <li id="IARRC">
-            <h4>Computer Vision: Self Driving Car (16)</h4>
+            <h4>Computer Vision: Self Driving Car (age 16)</h4>
             <p>For a competition against university teams, I made
               a fully autonomous race car that detects road lines
               quite efficiently (won 2nd place).
@@ -174,7 +172,7 @@
           </li>
 
           <li id="website">
-            <h4>My Website (16)</h4>
+            <h4>My Website (age 16)</h4>
             <p>This website was my first real HTML/CSS/JS project.
               I made the website from scratch and aimed for
               simplicity ;)
@@ -183,7 +181,7 @@
             </video>
           </li>
           <li id="mtr">
-            <h4>(Almost) Zero Friction Motor (15)</h4>
+            <h4>(Almost) Zero Friction Motor (age 15)</h4>
             <p>After learning about electromagnetism in physics
             class, a couple friends and I decided to make a
             motor with a levitating shaft (using magnets). It uses
@@ -192,7 +190,7 @@
             <img src="Motor.png" alt="">
           </li>
           <li id="ppcar">
-            <h4>Ultrasonic sensor car (13)</h4>
+            <h4>Ultrasonic sensor car (age 14)</h4>
             <p>A car built completely from scratch that uses ultrasonic sensors
             to follow paths made by cones/walls and can even parallel
             park! Won best project for the International Baccaleaureate
@@ -200,7 +198,7 @@
             <img src="parking.gif" alt="">
           </li>
           <li id="LEDMatrix">
-            <h4>My first electronics project: LED Matrix (11)</h4>
+            <h4>My first electronics project: LED Matrix (age 11)</h4>
             <p>My first electronics project was an LED Matrix,
               that I built with my friend who taught me how to
               solder and program a microcontroller.
@@ -232,13 +230,92 @@
             $("#physics").click(function(){
               $("#imgspace").attr("src","Snolab.JPG");
             });
-
             </script>
         </div>
     </div>
 
-<!-- scripts -->
+    <section class="timeline">
+      <h1>Research Projects</h1>
+      <p>Here you can find a few of my favorite research projects from grade
+      5 to grade 11 (present)</p>
+      <ul>
+        <li>
+          <div>
+            <time>2010-2011 (grade 5)</time> - <a href="#">Biotechnology for Digestion</a> This project was first an oral presentation on how the digestive system worked and the current technological advancements to assist the process -- coming soon (english translation)
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2011-2012 (grade 6)</time> - <a href="#">How Hearing Works</a> coming soon (english translation)
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2012-2013 (grade 7)</time> - add something here...
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2013-2014 (grade 8)</time> - add something here...
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2014-2015 (grade 9)</time> - <a href="#">Piezoelectricity to Save the World!</a> coming soon (english translation)
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2015-2016 (grade 10)</time> - <a href="#">Self Driving Car V1 (IB MYP Project)</a> coming soon (english translation)<br>
+            - <a href="#">Gene Splicing</a> coming soon (english translation)
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2016-2017 (grade 11)</time> - <a href="#">Levitating Motor</a> coming soon (english translation) <br>
+            - <a href="#">Computer Vision: Simply Autonomous Cars</a> coming soon (english translation)<br>
+            - <a href="#">Morality of Assisted Suicide</a> coming soon (english translation)
+          </div>
+        </li>
+      </ul>
+    </section>
 
+<!-- scripts -->
+    <script type="text/javascript">
+      (function() {
+
+        'use strict';
+
+        // define variables
+        var items = document.querySelectorAll(".timeline li");
+
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        function callbackFunc() {
+          for (var i = 0; i < items.length; i++) {
+            if (isElementInViewport(items[i])) {
+              items[i].classList.add("in-view");
+            }
+          }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+
+        })();
+    </script>
     <script type="text/javascript">
     	particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
     </script>
