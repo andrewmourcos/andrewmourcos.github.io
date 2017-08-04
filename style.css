@@ -6,7 +6,7 @@ body{
 .sheet1{
   height: 100vh;
   background-color: black;
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
 }
 #profile{
   padding-top: 50px;
@@ -104,6 +104,11 @@ body{
 }
 
 .nav{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
   transition: opacity 1s ease-in-out;
   opacity: 0;
   list-style: none;
