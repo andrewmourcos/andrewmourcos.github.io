@@ -154,26 +154,26 @@ body{
   }
 
 .sheet2{
+  height: 50vh;
   background-color: steelblue;
   margin-top: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 0;
   position: relative;
 }
 .shell{
-  display: flex;
-  align-items: center;
-  padding: 10px;
+  position: absolute;
   background-color: #fff2;
+  height: 80%;
   width: 80%;
   border-radius: 5px;
-  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .sheet2 img{
-
-  width: 200px;
+  height: 30vh;
   float: left;
-  padding: 20px;
+  padding: 5vh;
 }
 .sheet2 h1{
   color: white;
