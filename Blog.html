@@ -17,8 +17,11 @@
     <p>Here are some blog-type posts that I've written concerning activities
     that I'm involved with. I'll try my best to upload updates when they
     happen. Enjoy!</p>
-    <ul>
-      <li><a href="Post1.html">Our Quantum Journey: Charging Cavaliers</a></li>
-    </ul>
+    <ul class="posts">
+
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
   </body>
 </html>
