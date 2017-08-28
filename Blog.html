@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Hank Quinlan's Blog
+title: Writing
 ---
-	<h1>{{ page.title }}</h1>
+	<h1 class="Title">{{ page.title }}</h1>
+	<p id="blogdescription">As a grade 12 student, I probaby won't have a lot of time to update this blog section of my website,
+	however I'll be writing posts on my important activities (trips, competitions, cool projects, etc.). Enjoy!
+	</p>
+	<h1 class="Title">POSTS</h1>
 	<ul class="posts">
-
 	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span></li>
 	  {% endfor %}
 	</ul>
