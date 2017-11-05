@@ -1,8 +1,10 @@
 body{
   background: black;
   color: white;
+  font-family: Arial;
 }
 #TopPart {
+  color: inherit;
   text-align: center;
   width: auto;
   padding-bottom: 0;
