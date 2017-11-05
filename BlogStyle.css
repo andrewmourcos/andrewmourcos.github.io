@@ -1,5 +1,5 @@
 body{
-  background: lightgray;
+  background: black;
 }
 #TopPart {
   text-align: center;
@@ -65,5 +65,5 @@ body{
 }
 .posts{
   list-style: none;
-  padding-left: 10%;
+  padding-left: 0 5%;
 }
