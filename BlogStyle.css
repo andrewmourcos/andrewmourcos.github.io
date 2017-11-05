@@ -56,15 +56,15 @@ body{
 
 .Title{
   padding-left: 10%;
+  color: inherit;
 }
 #blogdescription{
+  color: inherit;
   padding-left: 10%;
   font-size: 18px;
   line-height: 25px;
-  padding: 0 5%;
   width: 85%;
 }
 .posts{
   list-style: none;
-  padding-left: 0 5%;
 }
