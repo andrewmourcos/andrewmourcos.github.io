@@ -162,7 +162,8 @@ body{
 }
 .shell{
   position: absolute;
-  background-color: #fff2;
+  /*background-color: #fff2;*/
+  background-color: rgba(0, 0, 0, 0.2);
   height: 80%;
   width: 80%;
   border-radius: 5px;
@@ -262,7 +263,8 @@ span.answer{
 .projectlist li{
   border-radius: 5px;
   list-style: none;
-  background-color: #fff1;
+  /*background-color: #fff1;*/
+  background-color: rgba(255, 255, 255, 0.05);
   margin-bottom: 1%;
   padding: 1%;
 }
@@ -272,7 +274,9 @@ span.answer{
   margin: 0;
 }
 .projectlist li:hover{
-  background-color: #fff9;
+  /*background-color: #fff9;*/
+  background-color: rgba(255, 255, 255, 0.3);
+
 }
 .projectlist img{
   display: block;
