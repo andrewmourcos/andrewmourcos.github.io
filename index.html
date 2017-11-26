@@ -54,6 +54,7 @@
         });
       });
     </script>
+
   </head>
   <body>
     <div class="sheet1" id="particles-js">
@@ -167,6 +168,15 @@
             <img src="CERN.png" alt="">
           </li>
 
+          <li id="3DPrinter">
+            <h4>CNC Machine</h4>
+            <p>Using a wooden post as the frame, motors and pulleys from a
+              broken printer and a microcontroller, I built a CNC machine that executes
+              g_code. Next steps: etching my custom PCB and mounting a
+              3d pen to 3D print!
+            </p>
+            <img src="3dPrinter.gif" alt="">
+          </li>
 
           <li id="IARRC">
             <h4>Computer Vision: Self Driving Car (age 16)</h4>
@@ -233,48 +243,16 @@
             $("#IARRC").click(function(){
               $("#imgspace").attr("src","AutonomousCar.gif");
             });
-            $("#physics").click(function(){
-              $("#imgspace").attr("src","Snolab.JPG");
+            $("#CERN").click(function(){
+              $("#imgspace").attr("src","CERN.png");
             });
+            $("#3DPrinter").click(function(){
+              $("#imgspace").attr("src","3dPrinter.gif");
+            });
+
             </script>
         </div>
     </div>
-<!--
-    <section class="timeline">
-      <h1>Research Projects</h1>
-      <p>Here you can find a few of my favorite research topics from grades
-      5 to 11 (present)</p>
-      <ul>
-        <li>
-          <div>
-            <time>2011-2012 (grade 6)</time> - <a href="#">How Hearing Works</a> coming soon (english translation)
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>2013-2014 (grade 8)</time> - <a href="#">Mathematics in Art</a> coming soon (english translation)
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>2014-2015 (grade 9)</time> - <a href="#">Piezoelectricity to Save the World!</a> coming soon (english translation)
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>2015-2016 (grade 10)</time> - <a href="#">Self Driving Car V1 (IB MYP Project)</a> coming soon (english translation)<br>
-            - <a href="#">Gene Splicing</a> coming soon (english translation)
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>2016-2017 (grade 11)</time> - <a href="#">Levitating Motor</a> coming soon (english translation) <br>
-            - <a href="#">Computer Vision: Simply Autonomous Cars</a> coming soon (english translation)<br>
-            - <a href="#">Morality of Assisted Suicide</a> coming soon (english translation)
-          </div>
-        </li>
-      </ul>
-    </section> -->
 
 <!-- scripts -->
     <script type="text/javascript">
