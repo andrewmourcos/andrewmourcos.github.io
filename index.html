@@ -1,33 +1,126 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-52TB5H2');</script>
-  <!-- End Google Tag Manager -->
-</head>
-
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52TB5H2"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-</body>
-<article>
-    <h1>Website unavailable at the moment</h1>
-    <div>
-        <p>Sorry for the inconvenience. I'm working on a complete redesign. If you need to you can always <a href="mailto:amourcos@gmail.com">contact me</a>.</p>
-        <p>&mdash; Andrew</p>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Andrew Mourcos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="Particles/particles.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+  </head>
+  <body>
+    <img src="Media/logo1.png" id="logo">
+    <div id="firstSlide">
+      <div id="particles-js"></div>
+      <script type="text/javascript" src="Particles/particle-config.js"></script>
+      <article>
+        <h1>Hi, I'm <mark>Andrew Mourcos</mark></h1>
+        <p>An ambitious student.</p>
+      </article>
     </div>
-</article>
+
+    <div id="secondSlide">
+      <article>
+        <h1><mark>About me.</mark></h1>
+        <img src="Media/Profile.png" id="Profile">
+
+        <p>
+          I'm a grade 12 student at PRDG, a french high school in Cambridge
+          Ontario. I'm interested in a range of topics including particle
+          physics, robotic systems and computer vision.
+          <br>
+          <br>
+          I'm currently working on research with the
+          <a href="http://www.cbc.ca/news/technology/charging-cavaliers-cern-1.4307858">Charging Cavaliers</a>
+          Physics team to discover Fractionally Charged Particles
+          using data from our T9 beamline experiment (CERN, Geneva).
+          <br>
+          <br>
+          In my spare time, I build robots and work on programming
+          projects, like this website!
+        </p>
+      </article>
+    </div>
+
+    <div id="thirdSlide">
+      <article>
+        <h2>Personal Projects</h2>
+        <p>Here are a few of the side projects and weekend
+          projects I've worked on. </p>
+        <ul id="projectlist">
+          <li>
+            <h3 class="collapsible">Single-Camera Autonomous Race Car</h3>
+            <div class="content">
+              <img src="Media/AutonomousCar.gif" alt="">
+              <p>Won 2nd place at the Int'l Autonomous Robot Racing Challenge as
+              the only high school participating.</p>
+            </div>
+          </li>
+          <li>
+            <h3 class="collapsible">DIY 3D printer</h3>
+            <div class="content">
+              <img src="Media/3dPrinter.gif" alt="">
+              <p>Made completely from scratch with recycled materials. </p>
+            </div>
+          </li>
+          <li>
+            <h3 class="collapsible">OUAC Status</h3>
+            <div class="content">
+              <img src="#" alt="">
+              <p>Script to give real-time notifications on university admissions status.</p>
+            </div>
+          </li>
+          <li>
+            <h3 class="collapsible">Peltier Smartwatch</h3>
+            <div class="content">
+              <img src="Media/Peltier.png" alt="">
+              <p>A wearable device that cools or heats your wrist based on the ambient temperature.</p>
+            </div>
+          </li>
+          <li>
+            <h3 class="collapsible">IB Ultrasonic Sensor Car</h3>
+            <div class="content">
+              <img src="Media/parking.gif" alt="">
+              <p>Part of my IB Personal Project (won 1st place). Equipped with
+                10 ultrasonic sensors, it could drive without collisions and park</p>
+            </div>
+          </li>
+        </ul>
+
+        <br>
+        <h2>Groups</h2>
+        <ul id="groupsleft">
+          <li> <a href="Media/IARRCCTV.mp4">Cavalier Robotics Team</a> </li>
+          <li> <a href="https://home.cern/about/updates/2017/06/high-school-physicists-win-chance-run-experiments-cern">Charging Cavaliers Physics Team</a> </li>
+          <li>PRDG Physics Team</li>
+          <li>Student Council</li>
+          <li>PRDG Squash Team</li>
+        </ul>
+        <ul id="groupsright">
+          <li>Founder/Leader (since 2016)</li>
+          <li>Member/Researcher (since 2016)</li>
+          <li>Leader (since 2017)</li>
+          <li>Treasurer (since 2017)</li>
+          <li>Founder/Player (since 2017)</li>
+        </ul>
+      </article>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+  </body>
+</html>
