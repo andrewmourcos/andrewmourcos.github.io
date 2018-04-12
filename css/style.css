@@ -55,7 +55,7 @@ a:hover { opacity: 0.7; text-decoration: none; }
 #thirdSlide{ margin: 0; width: 100vw; }
 li{ overflow: auto; }
 #projectlist img{ float: left; width: 100px; margin: 0; transition: .4s; }
-#projectlist img:hover{ transform: scale(6); position: absolute; }
+#projectlist img:hover{ transform: scale(6) translateX(50%); position: absolute; }
 #projectlist p{ float: right; margin: 0; width: 600px;}
 #projectlist h3{ clear: both; }
 #projectlist li:hover{ background-color: gainsboro;}
