@@ -7,15 +7,10 @@ body{
   color: #333;
 }
 img{ z-index: 2;}
-#logo{
-  padding: 0;
-  margin: 0;
-  background: yellow;
-  position: fixed;
-  width: 70px;
-  top: 0;
-  left: 0;
+#cv{
+  padding: 10px;
 }
+
 #particles-js {
   padding: 0;
   margin: 0;
