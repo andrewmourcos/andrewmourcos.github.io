@@ -7,9 +7,6 @@ body{
   color: #333;
 }
 img{ z-index: 2;}
-#cv{
-  padding: 10px;
-}
 
 #particles-js {
   padding: 0;
@@ -38,6 +35,8 @@ article{
 
 h1{ margin-top: 0; font-size: 60px; color: #333; }
 a { position: relative; color: black; background-color: yellow; text-decoration: none; }
+#cv{ padding: 10px; }
+
 a:hover { opacity: 0.7; text-decoration: none; }
 
 #firstSlide{ margin: 0; height: 50vw; width: 100vw; background: white; }
