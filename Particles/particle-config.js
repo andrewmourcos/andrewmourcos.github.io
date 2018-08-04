@@ -12,7 +12,7 @@ particlesJS("particles-js", {
       "value": "#000000"
     },
     "shape": {
-      "type": "polygon",
+      "type": "edge",
       "stroke": {
         "width": 0,
         "color": "#000000"
@@ -96,7 +96,7 @@ particlesJS("particles-js", {
         "speed": 3
       },
       "repulse": {
-        "distance": 300,
+        "distance": 400,
         "duration": 3
       },
       "push": {
