@@ -4,7 +4,7 @@ title: Meals on Wheels
 tag: Embedded systems, Robotics, Computer Vision
 description: A camera-based autonomous race car, made with rudimentary hardware found around the house. Made with the goal of promoting research in autonomy for younger students.
 tools: Embedded computer, Python, OpenCV, Arduino, ESC 
-img: Media/car1.png
+img: Media/car1.PNG
 img2: <img src="/Media/AutonomousCar.gif">
 img3: <iframe src="/Media/IARRCCTV.mp4"></iframe>
 ---
