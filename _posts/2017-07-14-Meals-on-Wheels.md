@@ -2,20 +2,21 @@
 layout: projects
 title: Meals on Wheels
 tag: Embedded systems, Robotics, Computer Vision
-description: A camera-based autonomous race car, made with rudimentary hardware found around the house. Made with the goal of promoting research in autonomy for younger students.
+description: A camera-based autonomous race car, made with hardware found around the house with the goal of promoting research in autonomy for younger students.
 tools: Embedded computer, Python, OpenCV, Arduino, ESC 
 img: Media/car1.PNG
 img2: <img src="/Media/AutonomousCar.gif">
 img3: <iframe src="/Media/IARRCCTV.mp4"></iframe>
 ---
 
-My highschool had not had a robotics team for over 6 years, so in my junior year, I decided to found *Cavalier Robotics* to share my passion with others from my school. Now, the team needed a purpose so I searched for competitions that we could compete in. One in particular caught my attention: the *International Autonomous Robot Racing Challenge*. This is a university-level competition hosted at the University of Waterloo. 
+My highschool had not had a proper robotics team for over 6 years, so in my junior year, I decided to found *Cavalier Robotics* to share my passion with other students. After hearing about the International Autonomous Robot Racing Challenge (IARRC) -- a university-level robotics competition -- I couldn't help but be interested in competing.
 
-By the end of the school year, we were able to build this robot which used a single-board computer as the main processor. Frames captured from a front-facing camera and a couple ultrasonic sensors were used as inputs for an algorithm I constructed. The architecture of the algorithm is as follows:
-1. Detect traffic light state (has the race begun?)
-2. Perform roadline detection
-3. Utilize roadlines for localization
-3. Determine best course of action (using PID)
-4. Send driving decision via serial to microcontroller
+I gathered up a team and got to work!
 
-In the end, our car worked the best and the algorithm proved to be quite robust, as we won 2nd place as the only highschool team participating.
+By the end of the school year, we were able to build this robot which uses a single-board computer as the 'brain', a mono-camera setup as the 'eyes' and a MCU as the 'legs'. We also created a trailer video and an engineering report, as per the competition requirements.
+
+Our whole team benefitted immensely from the experience: we learned about IEEE conventions, computer vision (my favorite part!), hardware, electronics, how to get funding, etc.
+
+In the end, our car and algorithm worked great, as we won 2nd place as the only highschool team participating that year. 
+
+We loved the project so much that we did it again the following year, but with a completely different approach (check it out in my projects section).
