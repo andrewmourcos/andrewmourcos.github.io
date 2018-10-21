@@ -5,13 +5,15 @@ tag: Embedded systems, Robotics, Computer Vision
 description: A camera-based autonomous race car, made with hardware found around the house with the goal of promoting research in autonomy for younger students.
 tools: Embedded computer, Python, OpenCV, Arduino, ESC 
 img: Media/car1.PNG
-img2: <img src="/Media/AutonomousCar.gif">
-img3: <iframe src="/Media/IARRCCTV.mp4"></iframe>
 ---
+<video controls muted src="/Media/IARRCCTV.mp4" width="100%">
+	Sorry, your browser doesn't support embedded videos.
+</video>
 
 My highschool had not had a proper robotics team for over 6 years, so in my junior year, I decided to found *Cavalier Robotics* to share my passion with other students. After hearing about the International Autonomous Robot Racing Challenge (IARRC) -- a university-level robotics competition -- I couldn't help but be interested in competing.
 
 I gathered up a team and got to work!
+<img src="/Media/AutonomousCar.gif">
 
 By the end of the school year, we were able to build this robot which uses a single-board computer as the 'brain', a mono-camera setup as the 'eyes' and a MCU as the 'legs'. We also created a trailer video and an engineering report, as per the competition requirements.
 

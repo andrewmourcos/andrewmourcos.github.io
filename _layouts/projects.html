@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>{{page.title}}</title>
+	<link href="https://fonts.googleapis.com/css?family=Adamina|Lato" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style2.css">
 </head>
 <body>
@@ -9,30 +10,23 @@
 		<a href="/index.html#projects">↩ return</a>
 	</div>
 
-	<div id="content">
-		<div class="media">
-			<span>
-				<img src="/{{page.img}}">
-				<div id="iframe">{{page.img2}}</div>
-				<div id="iframe">{{page.img3}}</div>
-				
-			</span>
-		</div>
-		<div class="article">
-			<h1>{{page.title}}</h1>
-			<p id="description">
-				<strong>Date:</strong> <i>{{page.date | date_to_string}}</i>
+	<article>
+		<div id="description">
+			<img src="/Media/Profile.png">
+			<p>
+				<strong>Date:</strong> <span class="date">{{page.date | date_to_string}}</span>
 				<br>
-				<strong>Tags:</strong> <i>{{page.tag}}</i>
+				<strong>Description:</strong> {{page.description}}
 				<br>
-				<strong>Decription:</strong> <i>{{page.description}}</i>
+				<strong>Tags:</strong> {{page.tag}}
 				<br>
-				<strong>Tools & Technologies:</strong> <i>{{page.tools}}</i>
+				<strong>Tools:</strong> {{page.tools}} 
 			</p>
-			<br>
-			<p>{{content}}</p>
 		</div>
-	</div>
+		<h1>{{page.title}}</h1>
+		{{page.content}}
+		
+	</article>
 	
 </body>
 </html>
