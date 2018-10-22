@@ -22,3 +22,6 @@ Our whole team benefitted immensely from the experience: we learned about IEEE c
 In the end, our car and algorithm worked great, as we won 2nd place as the only highschool team participating that year. 
 
 We loved the project so much that we did it again the following year, but with a completely different approach (check it out in my projects section).
+
+This was a fun trailer video we made about half-way through the project:
+<iframe src="https://www.youtube.com/embed/37YYdbE1FO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
