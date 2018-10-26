@@ -26,7 +26,7 @@ h2{
 a{
     color: #ce9927;
     text-decoration: none;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 img{
     padding: 15px;
@@ -34,6 +34,7 @@ img{
 p{
     padding: 20px;
 }
+p a{font-style: italic;}
 
 .slide{
     position: relative;
@@ -168,7 +169,7 @@ p{
   overflow: hidden;
 }
 #sidetext p{
-    font-size: 2vmin;
+    font-size: 2.2vmin;
     padding: 20px 0 20px 0;
 }
 #sidetext h2{
@@ -231,7 +232,7 @@ p{
   color: black;
   margin: 0;
   padding: 0 40px 0 40px;
-  font: 400 13.5px / 1.5 "Helvetica Neue";
+  font: 400 14px / 1.5 'Roboto', sans-serif;
 }
 .container:hover .overlay i{
   color: #ce9927;
@@ -242,7 +243,7 @@ p{
   padding: 30px;
   padding-bottom: 10px;
   background-color: #0001;
-  font: 400 13.5px / 1.5 "Helvetica Neue";
+  font: 400 14px / 1.5 'Roboto', sans-serif;
 }
 #contact p{
   line-height: 1;
