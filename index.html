@@ -83,7 +83,9 @@ layout: main
           <br><br>
           <mark>I am currently seeking a 4-month COOP (internship) starting May 2019.</mark>
           <br><br>
-          <a class="btn" href="Media/CV3.pdf">Resume</a>
+          <a class="btn" href="/Maintenance.html">Resume</a>
+
+          <!-- <a class="btn" href="Media/CV3.pdf">Resume</a> -->
         </p>
       </div>
     </div>
@@ -92,7 +94,7 @@ layout: main
   <section id="projects">
     <h2>Portfolio</h2>
     <ul>
-      {% for post in site.posts %}
+      {% for post in site.categories.projects %}
         <div class="container">
           <a href="{{post.url}}">
             <li>
@@ -112,6 +114,31 @@ layout: main
       {% endfor %}
     </ul>
   </section>
+  
+ <!--  <hr width="500px">
+  <section id="projects">
+      <h2>Posts</h2>
+      <ul>
+        {% for post in site.categories.blog %}
+          <div class="container">
+            <a href="{{post.url}}">
+              <li>
+                <img src="{{post.img}}">
+                <div class="overlay">
+                  <h4>{{post.title}}</h4>
+                  <hr width="150px">
+                  <p><i> {{ post.tag}} </i></p>
+                  <br><br>
+                  <p>{{ post.description | truncatewords:15 }}</p>
+                  <br>
+                  <p><i>Read more →</i></p>
+                </div>
+              </li>
+            </a>
+          </div>
+        {% endfor %}
+      </ul>
+    </section> -->
 
   <section id="contact">
     <p>I'd love to answer any questions you might have!</p>
