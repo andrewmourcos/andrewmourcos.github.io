@@ -1,11 +1,11 @@
 ---
 layout: projects
 title: Instant Sudoku
-tag: backend, web, computer vision
-description: Web app that uses computer vision to solve sudoku puzzles for the user.
+tag: Flask, webapp, CV, ML
+description: Made a webapp that uses CV to solve sudoku puzzles in the browser.
 img: Media/kachow.PNG
-tools: flask (backend web dev), sci-kit learn (ML classification), OpenCV (computer vision), Heroku (server)
-img2: <iframe src="https://www.youtube.com/embed/c1JF5VXNfGU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-___
+tools: Sci-kit Learn (ML classifiers), Flask (backend web dev), Heroku (server deployment), OpenCV
+img2: yeet
+---
 
-### It is live at https://instant-sudoku.herokuwebapp.com
+### This is live as a webapp at https://instant-sudoku.herokuwebapp.com
