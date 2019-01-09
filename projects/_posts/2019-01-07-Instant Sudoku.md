@@ -8,5 +8,5 @@ tools: Sci-kit Learn (ML classifiers), Flask (backend web dev), Heroku (server d
 img2: yeet
 ---
 
-### A demo for this project is live as a webapp <a href="https://instant-sudoku.herokuwebapp.com">here</a>
+### A demo for this project is live as a webapp <a href="https://instant-sudoku.herokuapp.com">here</a>
 hello this is a test
