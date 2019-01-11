@@ -16,6 +16,4 @@ As you can see, it was not too bad for a first attempt. I let that project sit f
 
 Finally, I incorporated the project into a complete <a href="https://instant-sudoku.herokuapp.com">web application</a>. It allows a user to upload a picture of a printed sudoku game, recognizes the puzzle, solves it, then displays the solution (if one exists).
 
-
-
-
+*Note: to serve my webapp, I'm using a free tier of Heroku. Unfortunately, there is a limit to the amount of uploads per month, so if my webapp seems to not work, you can always try running the app locally by downloading my code <a href="https://github.com/andrewmourcos/Instant-Sudoku">here.</a> *
