@@ -112,8 +112,7 @@ plt.imshow(mask)
 <img src="/Media/blog/lineDetection/output_12_1.png">
 
 
-Much better! Now we let's get rid of some noise, by eroding the image:
-
+Much better! Here, we probably don't need to, but let's try _eroding_ the image
 
 ```python
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(5,5))
@@ -124,7 +123,6 @@ plt.imshow(eroded)
 
 
 <img src="/Media/blog/lineDetection/output_14_1.png">
-
 
 
 ```python
