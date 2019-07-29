@@ -1,9 +1,9 @@
 ---
 layout: projects
 title: Instant Sudoku
-tag: Flask, webapp, CV, ML
-description: Made a webapp that uses CV to solve sudoku puzzles in the browser.
-img: Media/instant_sudoku_site.gif
+tag: AI, Flask, webapp, CV, ML
+description: Webapp that uses CV to solve sudoku puzzles in the browser.
+img: Media/sudoku_recognition.png
 tools: Sci-kit Learn (ML classifiers), Flask (backend web dev), Heroku (server deployment), OpenCV
 ---
 ### A demo for this project is live as a webapp <a href="https://instant-sudoku.herokuapp.com">here</a>

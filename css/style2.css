@@ -1,3 +1,7 @@
+/*
+For blog/project 
+*/
+
 @import url(emacs.css);
 body { 
   padding: 0;
@@ -5,12 +9,22 @@ body {
   font-family: 'Roboto', sans-serif; 
   color: #333; 
 }
+
 h1 { 
   font-size: 35px; 
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+h2 { 
+  font-size: 25px; 
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: black;
 }
 
 a { 
@@ -29,7 +43,6 @@ a:hover {
   height: 70px;
   background-color: #0001;
   line-height: 70px;
-  
 }
 #header a{
   font-weight: 800;
@@ -44,13 +57,17 @@ article{
   font-family: 'Adamina', serif;
   font-size: 16px;
   line-height: 2;
+  padding-bottom: 30px;
 }
 
 img{
   display: block;
   margin: 0 auto;
   width: 75%;
+  padding-bottom: 0px;
+  margin-bottom:0px;
 }
+
 iframe{
   display: block;
   margin: 0 auto;
@@ -81,9 +98,51 @@ iframe{
   font-weight: bold;
 }
 
+/* Figure captions are marked in the markdown with asterisk */
+img + em {
+  font-style: italic;
+  font-size: smaller;
+  float:right;
+  text-align: center;
+  width:80%;
+  padding-bottom: 15px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
+video + em {
+  font-style: italic;
+  font-size: smaller;
+  float:right;
+  text-align: center;
+  width:80%;
+  padding-bottom: 15px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
+strong{
+  color: black;
+  font-weight: 900;
+  font-style: bold;
+}
 
+#contact{
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 10px;
+  background-color: #0001;
+  font: 400 14px / 1.5 'Roboto', sans-serif;
+}
+#contact p{
+  line-height: 1;
+  padding: 10px;
+  margin: 0;
+}
+#contact span{
+  padding: 0;
+  margin: 0;
+}
 
 
 
