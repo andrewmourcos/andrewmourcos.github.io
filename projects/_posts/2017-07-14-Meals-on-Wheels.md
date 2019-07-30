@@ -6,7 +6,7 @@ description: A camera-based autonomous race car, made with hardware found around
 tools: Embedded computer, Python, OpenCV, Arduino, ESC 
 img: Media/car1.PNG
 ---
-<video controls muted src="/Media/IARRCCTV.mp4" width="100%">
+<video controls src="/Media/IARRCCTV.mp4" width="100%">
 	Sorry, your browser doesn't support embedded videos.
 </video>
 
