@@ -144,5 +144,13 @@ strong{
   margin: 0;
 }
 
+.highlight pre{
+  padding: 15px;
+  overflow:scroll;
+  background-color: #0001;
+}
 
-
+.table{
+  width: 100%; 
+  overflow: auto;
+}

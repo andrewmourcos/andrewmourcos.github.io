@@ -145,7 +145,9 @@ Something useful you can do now is separate the right road-line from the left ro
 A simple way to do that would be to look at the slope of the lines. You can clearly see that due to the perspective of the camera, the left road line has a positive slope, while the right road line has a negative slope. 
 We can use some high school math to figure this out:
 
-$$m = \frac{\Delta y}{\Delta x}$$
+$$
+m = \frac{\Delta y}{\Delta x}
+$$
 
 
 ```python
