@@ -1,0 +1,45 @@
+---
+title: project page
+layout: main
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andrew Mourcos | Projects</title>
+  <link rel="stylesheet" href="css/project_page_style.css">
+</head>
+
+<body>
+
+
+  <h2>Projects</h2>
+
+	<section id="projects">
+    
+    <ul id="all">
+      {% for post in site.categories.projects %}
+        <div class="container">
+          <a href="{{post.url}}">
+            <li>
+              <img src="{{post.img}}">
+              <div class="overlay">
+                <h4>{{post.title}}</h4>
+                <hr width="150px">
+                <p><i> {{ post.tag}} </i></p>
+                <br><br>
+                <p>{{ post.description | truncatewords:15 }}</p>
+                <br>
+                <p><i>Read more →</i></p>
+              </div>
+            </li>
+          </a>
+        </div>
+      {% endfor %}
+    </ul>
+
+  </section>
+
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Instant Sudoku
-tag: AI, Flask, webapp, CV, ML
+tag: Software
 description: Webapp that uses CV to solve sudoku puzzles in the browser.
 img: Media/sudoku_recognition.png
 tools: Sci-kit Learn (ML classifiers), Flask (backend web dev), Heroku (server deployment), OpenCV

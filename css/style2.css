@@ -1,6 +1,10 @@
 /*
 For blog/project 
 */
+html{
+  background-color: rgb(246,246,246);
+
+}
 
 @import url(emacs.css);
 body { 

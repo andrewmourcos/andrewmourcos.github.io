@@ -6,6 +6,7 @@ layout: main
 <!DOCTYPE html>
 <html>
 <head>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113919105-2"></script>
@@ -37,7 +38,7 @@ layout: main
             } // End if
           });
         });
-      </script>
+    </script>
 
   <meta charset="utf-8">
   <title>Andrew Mourcos - Engineering student, Waterloo</title>
@@ -47,111 +48,94 @@ layout: main
 </head>
 
 <body>
-  <div class="slide">
-    <div id="particles-js"></div>
-    <script type="text/javascript" src="Particles/particle-config.js"></script>
-    <div class="box">
-      <img id="profile_pic" src="Media/Profile2.JPG">
-      <h1>Andrew Mourcos</h1>
-      <hr style="width: 170px; height:1px; border:none;color:#333;background-color:#333;">
-      <p>
-        I'm a <strong>Mechatronics Engineering</strong> student at the University of Waterloo. 
-        <br> Here, you can learn more <a href="#section2">about me</a> and check out some of my past <a href="#projects">projects</a>!
-
-      </p>
-      <a class="btn" href="#projects">Projects</a>
-      <a class="btn" href="/resume.html">Resume</a>
-
-      <!-- <a class="btn" href="Media/CV3.pdf">Resume</a> -->
-    </div>
-    <div class="downArrow bounce">
-      <a href="#section2">&#x25BC;</a>
-    </div>
-  </div>
-
-  <div id="section2">
-    <div id="box2">
-      <img src="Media/img2.jpg">
-      <div id="sidetext">
-        <h2>About me</h2>
-        <p>
-          I'm a <mark>bilingual Mechatronics Engineering student</mark> at the University of Waterloo (currently in 2A). I'm interested in many topics including detector physics, robotics and machine learning.
-          <br><br>
-          I've worked on several large-scale projects. I was the <mark>founder of Cavalier Robotics</mark> — competing in the International Autonomous Robot Racing Challenge. In fact, we won 2nd place in our first year competing (when I was in grade 11).
-          <br><br>
-          I'm also a member of a high energy physics research team (<a href="https://www.cbc.ca/news/technology/charging-cavaliers-cern-1.4307858">The Charging Cavaliers</a>). We conducted <mark>research using a beamline at CERN</mark> and are currently working on a journal publication for our results.
-          <br><br>
-          In my spare time, I like to build robots, play instruments and play squash.
-          <br><br>
-          I've recently completed an internship at PerkinElmer as a <mark>Machine Learning Developer</mark> and
-          <mark>I am currently seeking a 4-month co-op for January 2020.</mark>
-          
-          <br><br>
-          <a class="btn" href="/resume.html">Resume</a>
-
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <section id="projects">
-    <h2>Projects</h2>
+  <header>Andrew Mourcos</header>
+  <nav>
     <ul>
-      {% for post in site.categories.projects %}
-        <div class="container">
-          <a href="{{post.url}}">
-            <li>
-              <img src="{{post.img}}">
-              <div class="overlay">
-                <h4>{{post.title}}</h4>
-                <hr width="150px">
-                <p><i> {{ post.tag}} </i></p>
-                <br><br>
-                <p>{{ post.description | truncatewords:15 }}</p>
-                <br>
-                <p><i>Read more →</i></p>
-              </div>
-            </li>
-          </a>
-        </div>
-      {% endfor %}
+      <li><a href="#about">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#posts">Posts</a></li>
     </ul>
-  </section>
-  
-  <hr width="500px">
-  <section id="projects">
-      <h2>Posts</h2>
-      <ul>
-        {% for post in site.categories.blog %}
-          <div class="container">
-            <a href="{{post.url}}">
-              <li>
-                <img src="{{post.img}}">
-                <div class="overlay">
-                  <h4>{{post.title}}</h4>
-                  <hr width="150px">
-                  <p><i> {{ post.tag}} </i></p>
-                  <br><br>
-                  <p>{{ post.description | truncatewords:15 }}</p>
-                  <br>
-                  <p><i>Read more →</i></p>
-                </div>
-              </li>
-            </a>
-          </div>
+
+  </nav>
+
+  <main>
+    <section id="about">
+      
+      
+      <p>
+        <img src="Media/Profile2.JPG">
+        I'm a sophomore at UWaterloo, studying Mechatronics Engineering and seeking internships for Fall 2020. I am currently working with InvisionAI as a Deep Learning Engineer for edge devices. 
+        <br><br>
+        In the past, I've worked on the Charging Cavaliers physics team at CERN, UW's design team UWAFT, and as a machine learning intern at PerkinElmer.
+      </p>   
+      
+    </section>
+
+    <section id="projects">
+
+      <h2>Projects</h2>
+      <p>
+        I've been working on hobbyist projects since I was a kid. Here is a collection of some documented projects:
+      </p>
+
+      <ul id="projectlist">
+        {% for post in site.categories.projects limit:4 %}
+        <li>
+          <h4 class="collapsible">{{post.title}}</h4>
+          <div class="content">
+              <img src="{{post.img}}" alt="">
+              <p>{{ post.description | truncatewords:20 }} <a href="{{post.url}}">Read More</a></p>
+
+            </div>
+
+        </li>
+        <hr>
         {% endfor %}
+        <a href="projects.html">View all projects</a>
+
       </ul>
     </section>
 
+    <section id="skills">
+      <h2>What I can do</h2>
+      <ul>
+        <li>Machine Learning</li>
+        <li>Full Stack Development</li>
+
+      </ul>
+    </section>
+   
+
+  </main>
+  
   <section id="contact">
     <p>I'd love to answer any questions you might have!</p>
     <a href="mailto:amourcos@uwaterloo.ca?Subject=I saw your website">amourcos@uwaterloo.ca</a>
     <hr width="200px">
     <br>
-    <span>Copyright © 2019 Andrew Mourcos</span>
+    <span>2020 © Andrew Mourcos</span>
     <p style="font-weight: 200;"><a href="https://github.com/andrewmourcos">GITHUB</a> | <a href="https://www.linkedin.com/in/andrew-mourcos/">LINKEDIN</a></p>
     <br>
   </section>
+
+
+<!-- Script for project list -->
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+<!-- Script for project list -->
 
 </body>
 </html>

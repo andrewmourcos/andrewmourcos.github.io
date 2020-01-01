@@ -90,7 +90,7 @@ particlesJS("particles-js", {
       },
       "bubble": {
         "distance": 300,
-        "size": 20,
+        "size": 5,
         "duration": 2,
         "opacity": 8,
         "speed": 3
