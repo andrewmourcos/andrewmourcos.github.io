@@ -11,9 +11,14 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
 a{
   color: #ce9927;
   text-decoration: none;
+}
+a:hover{
+  color: orange;
 }
 
 header{
@@ -28,11 +33,7 @@ nav{
   font-family: "HelveticaNeue";
 }
 nav a{
-  color: blue;
   text-decoration: none;
-}
-nav a:hover{
-  color: orange;
 }
 nav ul {
   list-style-type: none;
@@ -46,6 +47,15 @@ nav ul li{
 main{
   margin: 4rem 21% 0rem 21%;
 }
+/* removing giant gaps after header*/
+h2{
+  margin-bottom: 0px;
+}
+p{
+  margin-top: 0px;
+}
+
+
 
 
 #about{
@@ -111,6 +121,19 @@ main{
 
 
 
+/*Internship section*/
+#internships ul li h4{
+  margin-bottom: 0px;
+  line-height: 0.5;
+}
+#internships ul li p{
+  margin-top: 0px;
+}
+#internships ul li a{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
 
 
 

@@ -6,22 +6,22 @@ layout: main
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Andrew Mourcos | Projects</title>
+	<title>Andrew Mourcos | Posts</title>
   <link rel="stylesheet" href="css/project_page_style.css">
 </head>
 
 <body>
   <div id="header">
-    <a href="/index.html#projects">↩ return</a>
+    <a href="/index.html#posts">↩ return</a>
   </div>
 
-  <h2>Projects</h2>
+  <h2>Posts</h2>
 
   
 	<section id="projects">
     
     <ul id="all">
-      {% for post in site.categories.projects %}
+      {% for post in site.categories.blog %}
         <div class="container">
           <a href="{{post.url}}">
             <li>
