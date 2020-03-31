@@ -165,3 +165,29 @@ strong{
   width: 100%; 
   overflow: auto;
 }
+
+/* Adding dark mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(41,41,46);
+  } 
+  body {
+    background-color: rgb(41,41,46);
+    color: #ccc;
+  }
+  h1{
+    color: white;
+  }
+  h2{
+    color: white;
+  }
+  #description p{
+    color: #ccc;
+  }
+  #description p strong{
+    color: white;
+  }
+  .date{
+    color: #ccc;
+  }
+}

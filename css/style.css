@@ -12,7 +12,6 @@ body {
   padding: 0;
 }
 
-
 a{
   color: #ce9927;
   text-decoration: none;
@@ -96,7 +95,7 @@ p{
   clear: both; 
 }
 #projectlist li:hover{ 
-  background-color: gainsboro;
+  background-color: #0002;
 }
 
 .collapsible { 
@@ -108,7 +107,7 @@ p{
   padding: 10px; 
   display: none; 
   overflow: hidden; 
-  background-color: #f1f1f1; 
+  background-color: #0001; 
 }
 .collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -152,4 +151,16 @@ p{
 #contact span{
   padding: 0;
   margin: 0;
+}
+
+
+/* Adding dark mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(41,41,46);
+  } 
+  body {
+    background-color: rgb(41,41,46);
+    color: #ccc;
+  }
 }

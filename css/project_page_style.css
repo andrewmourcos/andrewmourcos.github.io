@@ -107,4 +107,31 @@ body{
   transition: 1.5s ease;
 }
 
+/* Adding dark mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(41,41,46);
+  } 
+  body {
+    background-color: rgb(41,41,46);
+    color: white;
+  }
+
+  .container{
+    background-color: rgb(41,41,46);
+  }
+  .overlay{
+    background-color: rgb(25,25,30);
+    color: #ccc;
+  }
+  .overlay p{
+    color: #ccc;
+  }
+  .overlay h4{
+    color: #ccc;
+  }
+  .overlay a{
+    color: #ccc;
+  }
+}
 
