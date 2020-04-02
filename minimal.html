@@ -1,0 +1,182 @@
+---
+title: My page
+layout: main
+---
+<!-- made by Andrew Mourcos -->
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113919105-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-113919105-2');
+    </script>
+  <!-- smooth scrolling script -->
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+              // Store hash
+              var hash = this.hash;
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 1200, function(){
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+
+  <meta charset="utf-8">
+  <title>Andrew Mourcos - Engineering student, Waterloo</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/minimal-style.css">
+  <script type="text/javascript" src="Particles/particles.js"></script>
+</head>
+
+<body>
+  <header>Andrew Mourcos</header>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#posts">Posts</a></li>
+    </ul>
+
+  </nav>
+
+  <main>
+    <section id="about">
+      
+      
+      <p>
+        <img src="Media/Profile2.JPG">
+        Hello, I'm a Mechatronics Engineering student <a href="">@uWaterloo</a>, deep learning intern <a href="">@InvisionAI</a> and a former ML dev <a href="">@PerkinElmer</a>.
+        <br><br>
+        Before starting university, I also worked on a particle physics project <a href="">@CERN</a> and won 2nd place <a href="">@IARRC</a> (the International Autonomous Robot Racing Challenge).
+        <br><br>
+        I am mostly interested in learning about ML foundations, digital electronics and robotics.
+      </p>   
+      
+    </section>
+
+    <section id="projects">
+
+      <h2>Personal Projects</h2>
+      <p>
+        I started working on hobbyist projects when I was a kid. I would try to take apart my toys and hack them to serve a different purpose. Many of my earlier projects were in electronics, then I slowly incorporated more software.
+        <br><br>
+        Here, I've written short posts about some of my projects &mdash; more are still to be added to this list.
+      </p>
+
+      <ul id="projectlist">
+        {% for post in site.categories.projects limit:4 %}
+        <li>
+          <h4 class="collapsible">{{post.title}}</h4>
+          <div class="content">
+              <img src="{{post.img}}" alt="">
+              <p>{{ post.description | truncatewords:20 }} <a href="{{post.url}}">Read More</a></p>
+
+            </div>
+
+        </li>
+        <hr>
+        {% endfor %}
+        <a href="projects.html">View all projects</a>
+
+      </ul>
+    </section>
+
+    </section>
+
+    <section id="internships">
+      <h2>Past Internships</h2>
+      <p>
+        I'm currently enrolled in a Co-op program at UW &mdash; with an internship after every school term.
+      </p>
+      <ul>
+        <li>
+          <h4>Machine Learning Developer (AI Prediction & Recommendation)</h4>
+          <a href="#internships">@PerkinElmer</a>
+          <p>Created deep attention networks for chemical prediction and recommendation in PerkinElmer's ChemDraw software.</p>
+        </li>
+
+        <li>
+          <h4>Deep Learning Engineering</h4> 
+          <a href="#internships">@InvisionAI</a>
+          <p>Developed object detection and facial recognition software being used across a variety of products.</p>
+        </li>
+      </ul>
+
+      <p>
+        My next scheduled co-op term will be Sep-Dec 2020. If you know of any tech opportunities, please contact me!
+      </p>
+    </section>
+
+
+    <section id="posts">
+      <h2>Posts</h2>
+      <ul id="projectlist">
+        {% for post in site.categories.blog limit:4 %}
+        <li>
+          <h4 class="collapsible">{{post.title}}</h4>
+          <div class="content">
+              <img src="{{post.img}}" alt="">
+              <p>{{ post.description | truncatewords:20 }} <a href="{{post.url}}">Read More</a></p>
+            </div>
+        </li>
+        <hr>
+        {% endfor %}
+        <a href="posts.html">View all posts</a>
+
+      </ul>
+
+    </section>
+
+
+  </main>
+  
+  <section id="contact">
+    <p>I'd love to answer any questions you might have!</p>
+    <a href="mailto:amourcos@uwaterloo.ca?Subject=I saw your website">amourcos@uwaterloo.ca</a>
+    <hr width="200px">
+    <br>
+    <span>2020 © Andrew Mourcos</span>
+    <p style="font-weight: 200;"><a href="https://github.com/andrewmourcos">GITHUB</a> | <a href="https://www.linkedin.com/in/andrew-mourcos/">LINKEDIN</a></p>
+    <br>
+  </section>
+
+
+<!-- Script for project list -->
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+<!-- Script for project list -->
+
+</body>
+</html>

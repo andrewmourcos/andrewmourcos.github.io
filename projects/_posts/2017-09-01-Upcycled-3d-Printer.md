@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Upcycled 3D Printer
-tag: Mechanical, 3D printing, microcontrollers
+tag: Electronics
 description: An old printer, a 3d printing pen toy and a few other miscellaneous parts were transformed into a low-budget 3d printer
 img: Media/3d.png
 tools: GRBL, microcontrollers, 3d printing

@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: SharpMusic piano transcriber
-tag: CV, Hackathon
+tag: Software
 description: Using CV to turn video into music.
 tools: Python, OpenCV, Lily
 img: Media/sharpmusic-thumbnail.jpg
