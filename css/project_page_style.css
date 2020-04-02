@@ -108,7 +108,7 @@ body{
 }
 
 /* Adding dark mode */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
     background-color: rgb(41,41,46);
   } 
