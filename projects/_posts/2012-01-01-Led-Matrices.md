@@ -4,11 +4,11 @@ title: LED Matrices
 tag: Electronics
 description: One of my first big micro-controller projects
 tools: Microcontrollers, Soldering, C programming
-img: Media/led-matrix/scrolling-arrow.MOV
+img: Media/led-matrix/scrolling-arrow.gif
 ---
 This was one of my first big arduino projects. The first version I built was in 2012 (grade 7) with a friend of mine. I'm showing it here since it was such a big project for me in terms of learning experiences.
 
-<img src="/Media/led-matrix/scrolling-arrow.MOV">
+<img src="/Media/led-matrix/scrolling-arrow.gif">
 *The second version (7x10)*
 
 First of all, it taught me important concepts in digital electronics. Namely, transistors, <a href="https://en.wikipedia.org/wiki/Multiplexing">multiplexing</a> and common integrated circuits that I used in V1 (<a href="https://en.wikipedia.org/wiki/Counter_(digital)">decade counters</a>, <a href="https://en.wikipedia.org/wiki/Shift_register">shift registers</a>).
@@ -17,7 +17,7 @@ First of all, it taught me important concepts in digital electronics. Namely, tr
 
 Second of all, it helped me get into programming at a young age. I spent so much time trying to debug the scrolling text code, but it definitely paid off! By the end, I had mastered 2d arrays :) . By the way, I have some code available <a href="https://github.com/andrewmourcos/LEDMatrixLibrary">here</a> on my GitHub. 
 
-<img src="/Media/led-matrix/scrolling-text.MOV" height="300">
+<img src="/Media/led-matrix/scrolling-text.gif" height="300">
 
 Third of all, I got SOOOOOOOO much practice in soldering — you have no idea.
 

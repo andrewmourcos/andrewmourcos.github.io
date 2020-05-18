@@ -3,7 +3,7 @@ layout: projects
 title: Upcycled 3D Printer
 tag: Electronics
 description: An old printer, a 3d printing pen toy and a few other miscellaneous parts were transformed into a low-budget 3d printer
-img: Media/3d-printer/logo.MOV
+img: Media/3d-printer/logo.gif
 tools: GRBL, microcontrollers, 3d printing
 ---
 <img src="/Media/3d-printer/3d.png">
@@ -20,5 +20,5 @@ In the end, I had a functional 3d printer. Additionally, I gained more experienc
 However, my biggest takeaway was that I learned about the importance of modularity. Believe me when I tell you, this project required many reiterations.
 
 Here is a video of the 3d printer in action:   
-<img src="/Media/3d-printer/logo.MOV">
+<img src="/Media/3d-printer/logo.gif">
 *(unfortunately, this was a failed print of a logo, but my video turned out nicely :) )*

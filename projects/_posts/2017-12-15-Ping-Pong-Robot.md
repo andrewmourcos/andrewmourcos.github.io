@@ -4,9 +4,9 @@ title: Table Tennis Robot
 tag: Electronics
 description: Practicing table tennis without breaking the bank
 tools: Arduino
-img: Media/ping-pong-robot/rally.MOV
+img: Media/ping-pong-robot/rally.gif
 ---
-<img src="/Media/ping-pong-robot/rally.MOV">
+<img src="/Media/ping-pong-robot/rally.gif">
 *The robot in action*
 
 In high school, my friends and I played table-tennis *a lot*. After liberating our school's old (semi-broken) ping pong table from the depths of the storage closet, we started playing almost every day: during lunch, between classes, even after school! Ping-pong soon became very popular and our school bought 2 new tables because of it!
@@ -19,7 +19,7 @@ For the second version, I had no need to upgrade the building material — cardb
 
 I split the contraption into two detacheable modules: the ball launcher and the ball feeder. The ball feeder consists of two cardboard tubes that join at a 90 degree angle. At that intersection, I have a servo motor acting as a piston. When it's time to fire a ball, the servo retracts an arm, a ball drops into the second tube and finally the servo extends the arm — pushing the ball into the launcher.
 
-<img src="/Media/ping-pong-robot/feeder.MOV">
+<img src="/Media/ping-pong-robot/feeder.gif">
 *Closeup of ball feeder*
 
 The second version of the launcher didn't change drastically. It was still a cardboard tube with a wheel poking into one side to launch the ping pong balls (much like a motorized hot-wheels track). The two main differences were (1) better structural integrity and (2) being completely detacheable from the feeder. The reason for this is that I wanted to be able to attach the launcher in any orientation to change the direction of the spin it put on the ball. For example, if I wanted to practice against top-spin, I would orient the launcher upright; if I wanted backspin, I would rotate the launcher 180 degrees W.R.T. the feeder.
