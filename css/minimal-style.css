@@ -69,6 +69,12 @@ p{
   overflow:hidden;
   text-align: justify;
 }
+.golden{
+  color: #ce9927;
+}
+#about mark{
+  background-color: turquoise;
+}
 
 
 
@@ -121,7 +127,11 @@ p{
 
 
 /*Internship section*/
-#internships ul li h4{
+#internships ul{
+  margin-top: 0px;
+}
+
+/*#internships ul li h4{
   margin-bottom: 0px;
   line-height: 0.5;
 }
@@ -132,7 +142,7 @@ p{
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 14px;
-}
+}*/
 
 
 
