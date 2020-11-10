@@ -6,7 +6,6 @@ layout: main
 <!DOCTYPE html>
 <html>
 <head>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113919105-2"></script>
@@ -38,117 +37,122 @@ layout: main
             } // End if
           });
         });
-    </script>
+      </script>
 
   <meta charset="utf-8">
   <title>Andrew Mourcos - Engineering student, Waterloo</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="css/minimal-style.css">
+  <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="Particles/particles.js"></script>
 </head>
 
 <body>
-  <header>Andrew Mourcos</header>
-  <nav>
-    <ul>
-      <li><a href="#about">About |</a></li>
-      <li><a href="projects.html"> Projects |</a></li>
-      <li><a href="#posts"> Posts |</a></li>
-      <li><a href="flashy-index.html">Old Site</a></li>
-    </ul>
-
-  </nav>
-
-  <main>
-    <section id="about">
+  <div class="slide">
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="Particles/particle-config.js"></script>
+    <div class="box">
+      <img id="profile_pic" src="Media/Profile2.JPG">
+      <h1>Andrew Mourcos</h1>
+      <hr style="width: 170px; height:1px; border:none;color:#333;background-color:#333;">
       <p>
-        <img src="Media/Profile2.JPG">
-        I'm a Mechatronics Engineering student at UWaterloo. I like to build cool stuff — things that companies like PerkinElmer distribute to <mark>millions of scientists worldwide</mark>, or that InvisionAI deploys for <mark>blazing-fast deep learning on edge computers</mark>.
-        <br><br>
-        Even in highschool: I built <a href="/Media/IARRCCTV.mp4">self-driving cars that beat Georgia Tech twice</a> and was one of <a href="https://doi.org/10.1142/S2661339520500079">the youngest people in the world to conduct a particle physics experiment at CERN</a>.
-        <br><br>
-        I'm open to summer '21 tech internships, so <a href="#contact">reach out</a>!
-      </p>   
-    </section>
+        I'm a <strong>Mechatronics Engineering</strong> student at the University of Waterloo. 
+        <br> Here, you can learn more <a href="#section2">about me</a> and check out some of my past <a href="#projects">projects</a>!
 
-    <section id="projects">
-
-      <h2>Personal Projects</h2>
-      <p>
-        I started working on hobbyist projects when I was a kid. I would try to take apart my toys and hack them to serve a different purpose. Many of my earlier projects were in electronics, then I slowly incorporated more software.
-        <br><br>
-        Here, I've gathered a far-from-complete list of hackathon products, weekend builds and passion projects:
       </p>
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn" href="/resume.html">Resume</a>
 
-      <ul id="projectlist">
-        {% for post in site.categories.projects limit:4 %}
-        <li>
-          <h4 class="collapsible">{{post.title}}</h4>
-          <div class="content">
-              <img src="{{post.img}}" alt="">
-              <p>{{ post.description | truncatewords:20 }} <a href="{{post.url}}">Read More</a></p>
+      <!-- <a class="btn" href="Media/CV3.pdf">Resume</a> -->
+    </div>
+    <div class="downArrow bounce">
+      <a href="#section2">&#x25BC;</a>
+    </div>
+  </div>
 
-            </div>
+  <div id="section2">
+    <div id="box2">
+      <img src="Media/img2.jpg">
+      <div id="sidetext">
+        <h2>About me</h2>
+        <p>
+          Hello, I'm a rising junior in Mechatronics Engineering <a href="#section2">@uWaterloo</a> with nearly a year of work experience in robotics. Previously, I was a deep learning (AI) intern at the lifescience giant PerkinElmer and at the computer vision startup InvisionAI. Currently, I'm writing firmware and designing electronics at ForceN to give robots a digital sense of touch.
+          <br><br>
+          Before I started university, I also built <a href="/Media/IARRCCTV.mp4">self-driving cars that beat schools like Georgia Tech</a> and was one of <a href="https://doi.org/10.1142/S2661339520500079">the youngest people in the world to conduct a particle physics experiment at CERN</a>.
+          <br><br>
+          In my free time, I work on hobby electronics/robotics projects, play squash, table-tennis and chess.
+          <br><br>
+          <mark>Help me find my next internship for Summer 2021:</mark>
+          <br><br>
+          <a class="btn" href="/resume.html">Resume</a>
 
-        </li>
-        <hr>
-        {% endfor %}
-        <a href="projects.html">View all projects</a>
+        </p>
+      </div>
+    </div>
+  </div>
 
-      </ul>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      {% for post in site.categories.projects %}
+        <div class="container">
+          <a href="{{post.url}}">
+            <li>
+              <img src="{{post.img}}">
+              <div class="overlay">
+                <h4>{{post.title}}</h4>
+                <hr width="150px">
+                <p><i> {{ post.tag}} </i></p>
+                <br><br>
+                <p>{{ post.description | truncatewords:15 }}</p>
+                <br>
+                <p><i>Read more →</i></p>
+              </div>
+            </li>
+          </a>
+        </div>
+      {% endfor %}
+    </ul>
+    <br>
+    <a class="btn" href="projects.html">View As Grid</a>
+    <!-- <a href="projects.html" style="font-size: 90%; color: purple;"> > view all as grid < </a> -->
+  </section>
 
-
-    <section id="posts">
+  <section id="projects">
       <h2>Posts</h2>
-      <ul id="projectlist">
-        {% for post in site.categories.blog limit:4 %}
-        <li>
-          <h4 class="collapsible">{{post.title}}</h4>
-          <div class="content">
-              <img src="{{post.img}}" alt="">
-              <p>{{ post.description | truncatewords:20 }} <a href="{{post.url}}">Read More</a></p>
-            </div>
-        </li>
-        <hr>
+      <ul>
+        {% for post in site.categories.blog %}
+          <div class="container">
+            <a href="{{post.url}}">
+              <li>
+                <img src="{{post.img}}">
+                <div class="overlay">
+                  <h4>{{post.title}}</h4>
+                  <hr width="150px">
+                  <p><i> {{ post.tag}} </i></p>
+                  <br><br>
+                  <p>{{ post.description | truncatewords:15 }}</p>
+                  <br>
+                  <p><i>Read more →</i></p>
+                </div>
+              </li>
+            </a>
+          </div>
         {% endfor %}
-        <a href="posts.html">View all posts</a>
-
       </ul>
-
+      <br>
+      <a class="btn" href="posts.html">View As Grid</a>
+      <!-- <a href="posts.html" style="font-size: 90%; color: purple;"> > view all as grid < </a> -->
     </section>
 
-
-  </main>
-  
   <section id="contact">
     <p>I'd love to answer any questions you might have!</p>
-    <span class="golden">amourcos[at]uwaterloo[dot]ca</span>
+    <a href="mailto: amourcos@uwaterloo.ca">amourcos(at)uwaterloo(dot)ca</a>
     <hr width="200px">
     <br>
-    <span>2020 © Andrew Mourcos</span>
+    <span>Copyright © 2020 Andrew Mourcos</span>
     <p style="font-weight: 200;"><a href="https://github.com/andrewmourcos">GITHUB</a> | <a href="https://www.linkedin.com/in/andrew-mourcos/">LINKEDIN</a></p>
     <br>
   </section>
-
-
-<!-- Script for project list -->
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-  </script>
-<!-- Script for project list -->
 
 </body>
 </html>

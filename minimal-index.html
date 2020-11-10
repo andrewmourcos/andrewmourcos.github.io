@@ -1,0 +1,152 @@
+---
+title: My page
+layout: main
+---
+<!-- made by Andrew Mourcos -->
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113919105-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-113919105-2');
+    </script>
+  <!-- smooth scrolling script -->
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+              // Store hash
+              var hash = this.hash;
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 1200, function(){
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+
+  <meta charset="utf-8">
+  <title>Andrew Mourcos - Engineering student, Waterloo</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/minimal-style.css">
+  <script type="text/javascript" src="Particles/particles.js"></script>
+</head>
+
+<body>
+  <header>Andrew Mourcos</header>
+  <nav>
+    <ul>
+      <li><a href="#about">About |</a></li>
+      <li><a href="projects.html"> Projects |</a></li>
+      <li><a href="#posts"> Posts |</a></li>
+      <li><a href="flashy-index.html">Old Site</a></li>
+    </ul>
+
+  </nav>
+
+  <main>
+    <section id="about">
+      <p>
+        <img src="Media/Profile2.JPG">
+        I'm a rising junior in Mechatronics Engineering at UWaterloo with nearly a year of work experience in robotics. Previously, I was a deep learning (AI) intern at the lifescience giant PerkinElmer and at the computer vision startup InvisionAI. Currently, I'm writing firmware and designing electronics at ForceN to give robots a digital sense of touch.
+        <br><br>
+        Before I started university, I also built <a href="/Media/IARRCCTV.mp4">self-driving cars that beat schools like Georgia Tech</a> and was one of <a href="https://doi.org/10.1142/S2661339520500079">the youngest people in the world to conduct a particle physics experiment at CERN</a>.
+        <br><br>
+        I'm currently on the hunt for my next summer 2021 coop/internship, so <a href="#contact">reach out</a>!
+      </p>   
+    </section>
+
+    <section id="projects">
+
+      <h2>Personal Projects</h2>
+      <p>
+        When I have free time, I like to take up side projects and participate in hackathons. Here, I've gathered a far-from-complete list of hackathon products, weekend builds and passion projects:
+      </p>
+
+      <ul id="projectlist">
+        {% for post in site.categories.projects limit:4 %}
+        <li>
+          <h4 class="collapsible">{{post.title}}</h4>
+          <div class="content">
+              <img src="{{post.img}}" alt="">
+              <p>{{ post.description | truncatewords:20 }} <a href="{{post.url}}">Read More</a></p>
+
+            </div>
+
+        </li>
+        <hr>
+        {% endfor %}
+        <a href="projects.html">View all projects</a>
+
+      </ul>
+    </section>
+
+
+    <section id="posts">
+      <h2>Posts</h2>
+      <ul id="projectlist">
+        {% for post in site.categories.blog limit:4 %}
+        <li>
+          <h4 class="collapsible">{{post.title}}</h4>
+          <div class="content">
+              <img src="{{post.img}}" alt="">
+              <p>{{ post.description | truncatewords:20 }} <a href="{{post.url}}">Read More</a></p>
+            </div>
+        </li>
+        <hr>
+        {% endfor %}
+        <a href="posts.html">View all posts</a>
+
+      </ul>
+
+    </section>
+
+
+  </main>
+  
+  <section id="contact">
+    <p>I'd love to answer any questions you might have!</p>
+    <span class="golden">amourcos[at]uwaterloo[dot]ca</span>
+    <hr width="200px">
+    <br>
+    <span>2020 © Andrew Mourcos</span>
+    <p style="font-weight: 200;"><a href="https://github.com/andrewmourcos">GITHUB</a> | <a href="https://www.linkedin.com/in/andrew-mourcos/">LINKEDIN</a></p>
+    <br>
+  </section>
+
+
+<!-- Script for project list -->
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+<!-- Script for project list -->
+
+</body>
+</html>
