@@ -19,7 +19,7 @@ Second of all, it helped me get into programming at a young age. I spent so much
 
 <img src="/Media/led-matrix/scrolling-text.gif" height="300">
 
-Third of all, I got SOOOOOOOO much practice in soldering — you have no idea.
+Third of all, I got a lot of practice in soldering — you have no idea.
 
 <img src="/Media/led-matrix/soldering.JPG">
 *Out of their casing — some questionable soldering at first, but I eventually got really good!*
