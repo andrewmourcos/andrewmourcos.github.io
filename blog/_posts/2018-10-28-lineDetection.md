@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: A Simple Line Detection Algorithm in Python
-tag: Tutorial, Python, OpenCV, Numpy
+tag: OpenCV tutorial
 description: A helpful guide for someone wanting to learn how to use OpenCV
 tools: Python, OpenCV, Numpy
 img: /Media/blog/lineDetection/output_17_1.png
