@@ -181,6 +181,10 @@ strong{
   h2{
     color: white;
   }
+  strong{
+    color: white;
+  }
+  
   #description p{
     color: #ccc;
   }
