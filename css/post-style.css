@@ -1,14 +1,9 @@
-/*
-For blog/project 
-*/
+@import "monokai.css";
+
 html{
   background-color: rgb(246,246,246);
 
 }
-
-/*@import url(emacs.css);*/
-@import "vim.css";
-
 
 body { 
   padding: 0;
@@ -17,11 +12,11 @@ body {
   color: #333; 
 }
 
-/*body{
+body{
   background-color: #222;
   color: #e6e6e6;
   border-color: #e6e6e6;
-}*/
+}
 
 h1 { 
   font-size: 35px; 
