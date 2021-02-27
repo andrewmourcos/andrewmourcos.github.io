@@ -20,7 +20,8 @@ Note: I'm using jupyter notebooks to create this tutorial, for this reason I'm u
 
 So, let's start by importing these libraries:
 
-{% highlight python linenos %}
+
+```python
 # modules for *MY* setup:
 %matplotlib inline
 import matplotlib
@@ -29,7 +30,7 @@ from matplotlib import pyplot as plt
 # important modules:
 import cv2
 import numpy as np
-{% endhighlight %}
+```
 
 Now, let's try accessing an image. I have a file called "road lines.jpg" in my project directory
 
