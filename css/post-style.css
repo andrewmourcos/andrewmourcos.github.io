@@ -6,7 +6,10 @@ html{
 
 }
 
-@import url(emacs.css);
+/*@import url(emacs.css);*/
+@import "vim.css";
+
+
 body { 
   padding: 0;
   margin:0;
