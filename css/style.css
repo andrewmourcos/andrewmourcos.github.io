@@ -209,7 +209,6 @@ p a{font-style: italic;}
   overflow: hidden;
 }
 
-
 #projects ul li img{
   padding: 0;
   margin: 0;
@@ -274,6 +273,7 @@ p a{font-style: italic;}
   background-color: #F5F5F5;
   position: relative; 
   height: 100%; 
+  box-shadow:  4px 4px 20px -10px #101010;
 }
 .overlay{
   position: absolute;
