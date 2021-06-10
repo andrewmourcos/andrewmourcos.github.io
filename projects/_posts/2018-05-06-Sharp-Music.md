@@ -1,10 +1,10 @@
 ---
 layout: projects
-title: SharpMusic Piano Transcriber
+title: Vision-Based Piano Transcriber
 tag: Computer Vision
 description: Using CV to turn video into music.
 tools: Python, OpenCV, Lily
-img: Media/sharpmusic-thumbnail.jpg
+img: Media/SharpMusicPanel.png
 ---
 <img src="/Media/sharpmusic-thumbnail.jpg">
 
