@@ -4,7 +4,7 @@ title: Vision-Based Piano Transcriber
 tag: Computer Vision
 description: Using CV to turn video into music.
 tools: Python, OpenCV, Lily
-img: Media/SharpMusicPanel.png
+img: Media/SharpMusicPanel.jpg
 ---
 <img src="/Media/sharpmusic-thumbnail.jpg">
 

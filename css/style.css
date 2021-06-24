@@ -190,7 +190,7 @@ p a{font-style: italic;}
 }
 
 #projects{
-  margin: 2rem 25vw;
+  margin: 2rem 20vw;
   box-sizing: border-box;
 }
 
@@ -200,7 +200,7 @@ p a{font-style: italic;}
   list-style: none;
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 1rem; 
 }
 
