@@ -16,14 +16,15 @@ mark{
     color: black;
 }
 h1{
-    font-size: 60px; 
-    color: #ce9927; 
+    font-size: 50px; 
+    /*color: #ce9927; */
     margin: 0;
 }
 
-h2{
+/*h2{
   color: #ce9927;
-}
+}*/
+
 a{
     color: #ce9927;
     text-decoration: none;
@@ -188,18 +189,17 @@ p a{font-style: italic;}
     padding: 0;
     line-height: 1;
 }
-#jobs{
+
+/*#jobs{
   margin: 2rem 25vw;
   box-sizing: border-box;
 }
 
 #jobs ul{
   list-style: none;
-  /*margin: 0 20rem 0 20rem;*/
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /*overflow-x: scroll; */
   grid-gap: 1rem; 
 }
 
@@ -226,7 +226,38 @@ p a{font-style: italic;}
   width: 100%;
   height: 0;
   padding-top: 100%;
+}*/
+#experience{
+  margin: 2rem 25vw;
+  /*box-sizing: border-box;*/
 }
+
+#experience ul{
+  list-style: none;
+  /*padding: 1rem;*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*grid-gap: 1rem; */
+}
+
+#experience ul li img{
+  float: left;
+  width: 100px;
+}
+
+#experience .description{
+  /*float: right;*/
+}
+
+#experience .description h4{
+  text-align: left;
+  /*font-size: 80%;*/
+}
+#experience .description p{
+  font-size: smaller;
+}
+
+
 
 #projects{
   margin: 2rem 25vw;

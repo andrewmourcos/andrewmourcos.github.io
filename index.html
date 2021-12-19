@@ -46,7 +46,26 @@ layout: main
   <script type="text/javascript" src="Particles/particles.js"></script>
 </head>
 
-  <section id="jobs">
+  <section id="intro">
+    <h1>Andrew Mourcos</h1>
+    <p>I am a 4th-year Mechatronics Engineering student at the University of Waterloo. I do a little bit of everything from coding to electro-mechanical design.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Previously, I've helped bring up _____ at _____: </h2>
+    <ul>
+      {% for post in site.categories.companies %}
+        <li>
+          <img src="{{post.img}}">
+          <div class="description">
+            <h4>{{post.product}} <mark>@ {{post.company}}</mark></h4>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- <section id="jobs">
     <h2>I have interned at:</h2>
     <ul>
       {% for post in site.categories.companies %}
@@ -60,8 +79,6 @@ layout: main
                 <h4>{{post.title}}</h4>
                 <hr width="150px">
                 <p><i> {{ post.tag}} </i></p>
-                <!-- <br><br> -->
-                <!-- <p>{{ post.description | truncatewords:15 }}</p> -->
               </div>
             </li>
           {% if post.external_url %}
@@ -70,10 +87,7 @@ layout: main
         </div>
       {% endfor %}
     </ul>
-    <p>Which amounts to over 1.5 years of tech-industry experience.</p>
-    <br>
-    <!-- <a href="projects.html" style="font-size: 90%; color: purple;"> > view all as grid < </a> -->
-  </section>
+  </section> -->
 
   <section id="projects">
     <h2>Personal Projects:</h2>

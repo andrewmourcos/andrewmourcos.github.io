@@ -1,5 +1,7 @@
 ---
+company: InvisionAI
 title: ML (Perception)
+product: Accelerated AI
 tag: Co-op
 description: Developed and accelerated computer vision systems deployed to edge devices.
 img: Media/job_panels/InvisionPanel.png
