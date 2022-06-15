@@ -68,6 +68,7 @@ p{
 #about p{
   overflow:hidden;
   text-align: justify;
+  font-size: 16px;
 }
 .golden{
   color: #ce9927;

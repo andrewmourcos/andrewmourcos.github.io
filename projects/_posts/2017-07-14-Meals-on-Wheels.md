@@ -1,27 +1,12 @@
 ---
 layout: projects
-title: Meals on Wheels
+title: Monocular Self-Driving Robot
 tag: Robotics
 description: A camera-based autonomous race car, made with hardware found around the house with the goal of promoting research in autonomy for younger students.
 tools: Embedded computer, Python, OpenCV, Arduino, ESC 
 img: Media/car1.jpg
 ---
-<video controls src="/Media/IARRCCTV.mp4" width="100%">
-	Sorry, your browser doesn't support embedded videos.
-</video>
+Used geometrical computer vision techniques to allow a monocular robot to race between roadlines, avoid obstacles and detect traffic lights. Built in grade 11. Placed 2nd, beating university design teams at IARRC (notably Georgia Tech, Western, KMUTT, etc)
 
-My highschool had not had a proper robotics team for over 6 years, so in my junior year, I decided to found *Cavalier Robotics* to share my passion with other students. After hearing about the International Autonomous Robot Racing Challenge (IARRC) -- a university-level robotics competition -- I couldn't help but be interested in competing.
-
-I gathered up a team and got to work!
 <img src="/Media/AutonomousCar.gif">
-
-By the end of the school year, we were able to build this robot which uses a single-board computer as the 'brain', a mono-camera setup as the 'eyes' and a MCU as the 'legs'. We also created a trailer video and an engineering report, as per the competition requirements.
-
-Our whole team benefitted immensely from the experience: we learned about IEEE conventions, computer vision (my favorite part!), hardware, electronics, how to get funding, etc.
-
-In the end, our car and algorithm worked great, as we won 2nd place as the only highschool team participating that year. 
-
-We loved the project so much that we did it again the following year, but with a completely different approach (check it out in my projects section).
-
-This was a fun trailer video we made about half-way through the project:
-<iframe src="https://www.youtube.com/embed/37YYdbE1FO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+*Embedded linux processor drives the car autonomously based on a single camera's input* 
