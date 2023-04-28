@@ -1,8 +1,10 @@
-/*
-For blog/project 
-*/
+@import "_monokai.css";
 
-@import url(emacs.css);
+html{
+  background-color: rgb(246,246,246);
+
+}
+
 body { 
   padding: 0;
   margin:0;
@@ -67,6 +69,7 @@ img{
   max-width: 75%;
   padding-bottom: 0px;
   margin-bottom:0px;
+  background: white;
 }
 
 iframe{
@@ -148,10 +151,40 @@ strong{
 .highlight pre{
   padding: 15px;
   overflow:scroll;
-  background-color: #0001;
+  background-color: black;
 }
 
 .table{
   width: 100%; 
   overflow: auto;
+}
+
+/* Adding dark mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(41,41,46);
+  } 
+  body {
+    background-color: rgb(41,41,46);
+    color: #ccc;
+  }
+  h1{
+    color: white;
+  }
+  h2{
+    color: white;
+  }
+  strong{
+    color: white;
+  }
+  
+  #description p{
+    color: #ccc;
+  }
+  #description p strong{
+    color: white;
+  }
+  .date{
+    color: #ccc;
+  }
 }
