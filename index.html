@@ -70,12 +70,12 @@ layout: main
             <br>
 
             <ul>
-                <li><img src="/Media/Future Job Panel.png" alt="Your Company Here"></li>
-                <li><img src="/Media/Tesla Panel.png" alt="Tesla Motors"></li>
-                <li><img src="/Media/BlackBerry Panel.png" alt="BlackBerry, QNX"></li>
-                <li><img src="/Media/Forcen Panel.png" alt="Forcen, inc"></li>
-                <li><img src="/Media/Invision Panel.png" alt="InvisionAI"></li>
-                <li><img src="/Media/PerkinElmer Panel.png" alt="PerkinElmer"></li>
+                <li><img src="/Media/experience/Future Job Panel.png" alt="Your Company Here"></li>
+                <li><img src="/Media/experience/Tesla Panel.png" alt="Tesla Motors"></li>
+                <li><img src="/Media/experience/BlackBerry Panel.png" alt="BlackBerry, QNX"></li>
+                <li><img src="/Media/experience/Forcen Panel.png" alt="Forcen, inc"></li>
+                <li><img src="/Media/experience/Invision Panel.png" alt="InvisionAI"></li>
+                <li><img src="/Media/experience/PerkinElmer Panel.png" alt="PerkinElmer"></li>
             </ul>         
             <br>
             <p>
@@ -102,6 +102,7 @@ layout: main
         </p>
         <ul>
             {% for post in site.categories.projects %}
+            {% if post.hidden != true %}
             <div class="container">
                 <a href="{{post.url}}">
                     <li>
@@ -118,6 +119,7 @@ layout: main
                     </li>
                 </a>
             </div>
+            {% endif %}
             {% endfor %}
         </ul>
         <br>
