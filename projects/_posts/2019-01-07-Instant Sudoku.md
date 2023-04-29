@@ -5,6 +5,7 @@ tag: Machine Learning
 description: Webapp that uses CV to solve sudoku puzzles in the browser.
 img: Media/projects/instant_sudoku/sudoku_recognition.jpg
 tools: Sci-kit Learn (ML classifiers), Flask (backend web dev), Heroku (server deployment), OpenCV
+hidden: true
 ---
 ### A demo for this project is live as a webapp <a href="https://instant-sudoku.herokuapp.com">here</a>
 

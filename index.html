@@ -102,6 +102,7 @@ layout: main
         </p>
         <ul>
             {% for post in site.categories.projects %}
+            {% if post.hidden != true %}
             <div class="container">
                 <a href="{{post.url}}">
                     <li>
@@ -118,6 +119,7 @@ layout: main
                     </li>
                 </a>
             </div>
+            {% endif %}
             {% endfor %}
         </ul>
         <br>

@@ -159,6 +159,27 @@ strong{
   overflow: auto;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  width: 100%;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+table th,
+table td {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+table th {
+  font-weight: 600;
+}
+table tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+
 /* Adding dark mode */
 @media (prefers-color-scheme: dark) {
   html {
@@ -186,5 +207,9 @@ strong{
   }
   .date{
     color: #ccc;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #2d333b;
   }
 }

@@ -5,6 +5,7 @@ tag: Computer Vision
 description: Using CV to turn video into music.
 tools: Python, OpenCV, Lily
 img: Media/projects/sharpmusic/SharpMusicPanel.jpg
+hidden: true
 ---
 Built in 24 hours at Jamhacks 2018 (highschool hackathon)
  
