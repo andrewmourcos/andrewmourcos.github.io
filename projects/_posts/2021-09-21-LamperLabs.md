@@ -6,6 +6,8 @@ description: Design of a Bio-mimetic robot platform for marine ecology research
 tools: 
 img: Media/projects/lamperlabs/lamper-land-test.gif
 ---
+<img src="/Media/projects/lamperlabs/lamper_assembly.png">
+*SolidWorks assembly*
 
 <a href="https://lamperlabs.github.io/">LamperLabs</a> was a project focused on developing a fish-like robotic platform capable of gathering data in shallow water environments (ie: aquarium tanks and calm bodies of water). I co-founded the team with 3 friends and we managed to get backing from the Engineer of the Future Fund at UW to build a prototype.
 
