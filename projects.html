@@ -6,6 +6,15 @@ layout: main
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DED6JYJ5PB"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DED6JYJ5PB');
+  </script>
+  
 	<title>Andrew Mourcos | Projects</title>
   <link rel="stylesheet" href="css/project_page_style.css">
 </head>
@@ -25,7 +34,11 @@ layout: main
         <div class="container">
           <a href="{{post.url}}">
             <li>
-              <img src="{{post.img}}">
+              {% if post.video %}
+                <video src="{{ post.video }}" autoplay loop muted playsinline></video>
+              {% else %}
+                <img src="{{ post.img }}">
+              {% endif %}
               <div class="overlay">
                 <h4>{{post.title}}</h4>
                 <hr width="150px">

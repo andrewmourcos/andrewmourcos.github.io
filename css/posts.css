@@ -72,6 +72,16 @@ img{
   background: white;
 }
 
+video{
+  display: block;
+  margin: 0 auto;
+  max-height:80vh;
+  max-width: 75%;
+  padding-bottom: 0px;
+  margin-bottom:0px;
+  background: white;
+}
+
 iframe{
   display: block;
   margin: 0 auto;
@@ -113,8 +123,8 @@ img + em {
   padding-left: 10%;
   padding-right: 10%;
 }
-
-video + em {
+/* Captions for videos (gifs) */
+video + p em {
   font-style: italic;
   font-size: smaller;
   float:right;

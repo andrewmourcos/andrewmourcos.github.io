@@ -13,6 +13,8 @@ Webapp that lets you upload a picture of a sudoku puzzle and solves it for you. 
 <img src="/Media/projects/instant_sudoku/sudoku_recognition.jpg" style="width: 50%;">
 *Tries to recognize numbers from the sudoku puzzle picture*
 
-<img src="/Media/projects/instant_sudoku/instant_sudoku_site.gif">
+<video autoplay loop muted playsinline>
+ <source src="/Media/projects/instant_sudoku/instant_sudoku_site.mp4" type="video/mp4">
+</video>
 *Webapp provides solution to puzzle*
 
