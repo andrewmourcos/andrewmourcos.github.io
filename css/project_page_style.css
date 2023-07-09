@@ -45,9 +45,8 @@ h2{
   display: inline;
 }
 
-
 #projects{
-  margin: 2rem 3rem;
+  margin: 2rem 10vw;
   box-sizing: border-box;
 }
 
@@ -62,6 +61,15 @@ h2{
 }
 
 #projects ul li img{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#projects ul li video{
   padding: 0;
   margin: 0;
   width: 100%;

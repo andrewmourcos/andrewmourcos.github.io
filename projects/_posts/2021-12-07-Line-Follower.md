@@ -8,7 +8,9 @@ img: Media/projects/line_follower/line_follower_render.png
 ---
 
 In a recent course at UWaterloo (MTE380), we were tasked with designing and building a search and rescue robot to compete against the rest of our class. The competition was tight, with teams being judged on their robot's speed and weight for a price-constrained solution, all while having to rescue a LEGO minifigure autonomously on an unknown course.
-<img src="/Media/projects/line_follower/driving.gif">
+<video autoplay loop muted playsinline>
+ <source src="/Media/projects/line_follower/driving.mp4" type="video/mp4">
+</video>
 *Our robot on the final course*
 
 The whole project was pretty open-ended and no one really knew what the course would look like. Originally, we started with the design shown below. It was a differential drive robot, relying mainly on an infrared reflectance sensor array for line following. Most teams were using some kind of claw/gripper to grab and release the LEGO figure - although you can see we decided to try making an ejectable adhesive-covered bumper. This helped us to significantly reduce weight and improve reliability.

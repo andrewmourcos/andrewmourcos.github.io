@@ -18,7 +18,9 @@ img: Media/projects/lamperlabs/lamper_assembly.png
 The robot itself was architected around the Nvidia Jetson single-board computer with an auxiliary microcontroller to handle actuator control requests asynchronously. These requests originate from a running websocket connection that relies on the fish's tethered WiFi receiver above water. Meanwhile, the Jetson captures video through the CSI2 camera, producing an RTP stream (via Gstreamer) with frames coming directly from the DMA buffer for very high throughput.
 
 ## Propulsion
-<img src="/Media/projects/lamperlabs/lamper-build.gif">
+<video autoplay loop muted playsinline>
+ <source src="/Media/projects/lamperlabs/lamper-build.mp4" type="video/mp4">
+</video>
 *Propulsion system demos*
 
 I worked with our mechanical lead (Kyle) closely to push for a single-motor propulsion system. As the motor completes a full revolution, the custom gear box transfers torque to two oppositely rotating turntables. Wires routed through the ribs of the tail are subject to alternating tension and slack to produce a tuna-like swimming pattern. I mainly helped with back-of-the-envelope mechanism sketches and kinematic modeling, while Kyle produced the actual CAD.

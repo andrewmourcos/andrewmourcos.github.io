@@ -108,7 +108,11 @@ layout: main
             <div class="container">
                 <a href="{{post.url}}">
                     <li>
-                        <img src="{{post.img}}">
+                        {% if post.video %}
+                            <video src="{{ post.video }}" autoplay loop muted playsinline></video>
+                        {% else %}
+                            <img src="{{ post.img }}">
+                        {% endif %}
                         <div class="overlay">
                             <h4>{{post.title}}</h4>
                             <hr width="150px">

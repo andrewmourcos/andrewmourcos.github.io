@@ -47,7 +47,9 @@ Well, the algorithm evidently worked, achieving a minimum round-trip distance of
 
 This was probably my favourite adaptive/cooperative algorithm to implement - it's both easy to code and can provide some very satisfying animations as shown below.
 
-<img src="/Media/projects/ece457a/particle_swarm.gif">
+<video autoplay loop muted playsinline>
+ <source src="/Media/projects/ece457a/particle_swarm.mp4" type="video/mp4">
+</video>
 *Particle swarm optimizer applied to a 2D Camelback function; Red dot = global best*
 
 Here, particles are initialized to random locations in the search space. Each record local and global "bests" to which surrounding particles are attracted in hopes of converging to a global optimum (candidate exploitation). An inertial term is added to the velocity update equations for particle motion to encourage exploration and avoid convergence to local optima.

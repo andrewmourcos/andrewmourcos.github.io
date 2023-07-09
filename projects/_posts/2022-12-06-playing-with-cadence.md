@@ -29,7 +29,9 @@ From there, Cadence's ADE XL was used for transient simulation of the circuit by
 # Mini Project 2: Dynamic (Domino) Logic
 The second project had a similar goal but this time employing dynamic logic - specifically Domino logic.
 
-<img src="/Media/projects/mte421/virtuoso_dyn_or8.gif">
+<video autoplay loop muted playsinline>
+ <source src="/Media/projects/mte421/virtuoso_dyn_or8.mp4" type="video/mp4">
+</video>
 *My domino-logic OR8 schematic speedrun in Cadence Virtuoso*
 
 This was my design strategy: develop several logic topologies > evaluate by hand via path effort calculations > implement the best topology in Cadence (w/ parametric transistor sizes) > Simulate w/ different transistor ratios. 
