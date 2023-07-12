@@ -117,7 +117,7 @@ header ul li img {
   z-index: 2;
   padding: 50px;
   border-radius: 15px;
-  width: 50vw;
+  width: 45vw;
 }
 
 #particles-js {
@@ -134,12 +134,19 @@ header ul li img {
 
 .btn {
   text-align: center;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   border: 2px #E9B000 solid;
   color: #ce9927;
   background-color: transparent;
   -webkit-transition: -webkit-all 0.2s;
-  transition: all 0.2s
+  transition: all 0.2s;
+}
+
+.btn a {
+  display: block; /* Make the link a block-level element to fill the .btn div */
+  text-align: center; /* Center the link text */
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .btn:visited {

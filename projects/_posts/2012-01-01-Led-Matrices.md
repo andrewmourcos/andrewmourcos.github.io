@@ -6,6 +6,7 @@ description: One of my first big micro-controller projects
 tools: Microcontrollers, Soldering, C programming
 # img: Media/projects/led_matrix/scrolling-arrow.gif
 video: Media/projects/led_matrix/scrolling-arrow.mp4
+hidden: true
 ---
 This was my first larger-scale microcontroller project, which I built right before starting middle school. I later built a second version.
 

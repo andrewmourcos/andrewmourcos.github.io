@@ -5,6 +5,7 @@ tag: Electronics
 description: A couple of small digital electronics projects from MTE421.
 tools: Cadence Virtuoso
 img: /Media/projects/mte421/parametric-nor4.png
+hidden: true
 ---
 In my 4A term at UW, I took MTE421: Linear and Nonlinear Electronics, which mainly focused on digital ASIC design principles. In the course, we learned how to design and evaluate logic circuits from the transistor level and use the Cadence suite of tools.
 

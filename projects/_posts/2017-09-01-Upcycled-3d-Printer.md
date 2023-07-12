@@ -5,6 +5,7 @@ tag: Electronics
 description: An old printer, a 3d printing pen toy and a few other miscellaneous parts were transformed into a low-budget 3d printer
 tools: GRBL, microcontrollers, 3d printing
 video: Media/projects/3d-printer/logo.mp4
+hidden: true
 ---
 <img src="/Media/projects/3d-printer/3d.png">
 *A 3d printer built from recycled parts (before I made the electronics permanent)*
