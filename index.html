@@ -59,48 +59,47 @@ layout: main
         <div class="box">
             <h1 style="text-align: center;">Andrew Mourcos</h1>
             <h3 style="text-align: center;">
-                Mechatronics Engineer & 5x Intern
+                Mechatronics engineer who loves to build things!
             </h3>
             <hr style="width: 170px; height:1px; border:none;color:#333;background-color:#333;">
             <p>
-                I'm a Mechatronics engineer with a passion for electronics, embedded systems, and solving complex problems.
-                I recently completed an internship on Tesla's AutoPilot team, where I gained hands-on experience
-                with cutting-edge technology in the automotive industry. Prior to that, I completed internships 
-                at BlackBerry, Forcen, InvisionAI, and PerkinElmer, doing a mixture of deep learning R&D,
-                firmware, and electronics development.
+                I recently graduated from UWaterloo with a BASc in Mechatronics Engineering and an Option 
+                in Computing. I'm currently looking for my next challenge!
             </p>
             <br>
 
             <ul>
-                <li><img src="/Media/experience/Future Job Panel.png" alt="Your Company Here"></li>
-                <li><img src="/Media/experience/Tesla Panel.png" alt="Tesla Motors"></li>
-                <li><img src="/Media/experience/BlackBerry Panel.png" alt="BlackBerry, QNX"></li>
-                <li><img src="/Media/experience/Forcen Panel.png" alt="Forcen, inc"></li>
-                <li><img src="/Media/experience/Invision Panel.png" alt="InvisionAI"></li>
                 <li><img src="/Media/experience/PerkinElmer Panel.png" alt="PerkinElmer"></li>
+                <li><img src="/Media/experience/Invision Panel.png" alt="InvisionAI"></li>
+                <li><img src="/Media/experience/Forcen Panel.png" alt="Forcen, inc"></li>
+                <li><img src="/Media/experience/BlackBerry Panel.png" alt="BlackBerry, QNX"></li>
+                <li><img src="/Media/experience/Tesla Panel.png" alt="Tesla Motors"></li>
+                <li><img src="/Media/experience/Future Job Panel.png" alt="Your Company Here"></li>
             </ul>         
             <br>
             <p>
-                Currently, I'm finishing up my undergraduate degree in Mechatronics Engineering and looking 
-                forward to exploring new opportunities in the hardware engineering field. In my free time, 
-                I enjoy tinkering with electronics and building my own projects. When I'm not working on hardware, 
-                I like to stay active by biking and playing squash.
+                During my undergrad, I completed internships doing EE at <a href="https://www.tesla.com/autopilot">Tesla</a>, 
+                FW at <a href="https://blackberry.qnx.com/en/products/automotive/qnx-adas">BlackBerry</a>, sensor design at 
+                <a href="https://forcen.tech/">Forcen</a>, CV at <a href="https://invision.ai/">InvisionAI</a>, and 
+                ML at <a href="https://revvitysignals.com/products/research/chemdraw">PerkinElmer (Revvity)</a> 
+                - totaling over 2 years of industry experience.
+            </p>
+            <br>
+            <p>
+                In my free time, I still enjoy tinkering with mechatronics side projects, biking, hiking, and some racket sports.
             </p>
 
 
         </div>
         <div class="downArrow bounce">
-            <a href="#projects">&#x25BC; See more &#x25BC;</a>
+            <a href="#projects">&#x25BC; more &#x25BC;</a>
         </div>
     </header>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Selected Projects</h2>
         <p>
-            I've been a maker for quite some time, with some of my earliest Arduino-based projects dating back 
-            to elementary school. Since then I've come a long way, enrolling in Mechatronics Engineering at 
-            UWaterloo and receiving mentorship from true experts in industry. This is a collection of some of my
-            side projects - some old, some new.
+            Sometimes I build things for fun - here are a few samples:
         </p>
         <ul>
             {% for post in site.categories.projects %}
@@ -128,7 +127,9 @@ layout: main
             {% endif %}
             {% endfor %}
         </ul>
-        <br>
+        <div class="btn">
+            <a href="/projects.html">See More</a>
+        </div>
     </section>
 
     <section id="contact">

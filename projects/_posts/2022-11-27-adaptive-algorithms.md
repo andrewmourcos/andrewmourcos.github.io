@@ -5,6 +5,7 @@ tag: Software
 description: A handful of search/optimizer algorithm implementations in Python
 tools: Python
 img: /Media/projects/ece457a/ant_colony_optimization.png
+hidden: true
 ---
 
 In my 4A term at UWaterloo, I took ECE457A: Cooperative and Adaptive Algorithms, which required the implementation of several deterministic and heuristic-based optimization methods. This post will show results for some of the more interesting trajectory and population based algorithms applied to ill-structured problems.

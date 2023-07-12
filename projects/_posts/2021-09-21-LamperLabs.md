@@ -5,6 +5,7 @@ tag: Robotics
 description: Design of a Bio-mimetic robot platform for marine ecology research
 tools: 
 img: Media/projects/lamperlabs/lamper_assembly.png
+video: /Media/projects/lamperlabs/lamper-land-test.mp4
 ---
 <img src="/Media/projects/lamperlabs/lamper_assembly.png">
 *SolidWorks assembly*
