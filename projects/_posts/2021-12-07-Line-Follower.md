@@ -11,7 +11,7 @@ In a recent course at UWaterloo (MTE380), we were tasked with designing and buil
 <video autoplay loop muted playsinline>
  <source src="/Media/projects/line_follower/driving.mp4" type="video/mp4">
 </video>
-*Our robot on the final course*
+*Our robot on the final course (note: clip sped up)*
 
 The whole project was pretty open-ended and no one really knew what the course would look like. Originally, we started with the design shown below. It was a differential drive robot, relying mainly on an infrared reflectance sensor array for line following. Most teams were using some kind of claw/gripper to grab and release the LEGO figure - although you can see we decided to try making an ejectable adhesive-covered bumper. This helped us to significantly reduce weight and improve reliability.
 <img src="/Media/projects/line_follower/alternate-design-render.png">
