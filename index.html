@@ -43,7 +43,7 @@ layout: main
     </script>
 
     <meta charset="utf-8">
-    <title>Andrew Mourcos' Website</title>
+    <title>Andrew Mourcos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@400;600&display=swap"
@@ -53,53 +53,52 @@ layout: main
 </head>
 
 <body>
-    <header>
-        <div id="particles-js"></div>
-        <script type="text/javascript" src="Particles/particle-config.js"></script>
-        <div class="box">
-            <h1 style="text-align: center;">Andrew Mourcos</h1>
-            <h3 style="text-align: center;">
-                Mechatronics Engineer
-            </h3>
-            <hr style="width: 170px; height:1px; border:none;color:#333;background-color:#333;">
-            <p>
-                I recently graduated from UWaterloo with a BASc in Mechatronics Engineering and an Option 
-                in Computing. I'm currently looking for my next challenge!
-            </p>
-            <br>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="Particles/particle-config.js"></script>
 
-            <ul>
-                <li><img src="/Media/experience/PerkinElmer Panel.png" alt="PerkinElmer"></li>
-                <li><img src="/Media/experience/Invision Panel.png" alt="InvisionAI"></li>
-                <li><img src="/Media/experience/Forcen Panel.png" alt="Forcen, inc"></li>
-                <li><img src="/Media/experience/BlackBerry Panel.png" alt="BlackBerry, QNX"></li>
-                <li><img src="/Media/experience/Tesla Panel.png" alt="Tesla Motors"></li>
-                <li><img src="/Media/experience/Future Job Panel.png" alt="Your Company Here"></li>
-            </ul>         
-            <br>
-            <p>
-                During my undergrad, I completed internships doing EE at <a href="https://www.tesla.com/autopilot">Tesla</a>, 
-                FW at <a href="https://blackberry.qnx.com/en/products/automotive/qnx-adas">BlackBerry</a>, sensor design at 
-                <a href="https://forcen.tech/">Forcen</a>, CV at <a href="https://invision.ai/">InvisionAI</a>, and 
-                ML at <a href="https://revvitysignals.com/products/research/chemdraw">PerkinElmer (Revvity)</a> 
-                - totaling over 2 years of industry experience.
-            </p>
-            <br>
-            <p>
-                In my free time, I still enjoy tinkering with mechatronics side projects, biking, hiking, and some racket sports.
-            </p>
-
-
+    <section id="about">
+        <h1>Andrew Mourcos</h1>
+        <hr style="width: 170px; height:1px; border:none;color:#333;background-color:#333;">
+        <div id="imgleft">
+            <img src="Media/profile.jpg">
+            <div>
+                <br>
+                <h3>About</h3>
+                <ul>
+                    <li>GitHub: <a href="https://github.com/andrewmourcos">@andrewmourcos</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/andrew-mourcos/">in/andrew-mourcos</a></li>
+                </ul>
+                <p>
+                    Now that I have time, I'm working on my own projects. Stay tuned.
+                    I can be reached via LinkedIn.
+                </p>
+            </div>
         </div>
-        <div class="downArrow bounce">
-            <a href="#projects">&#x25BC; more &#x25BC;</a>
-        </div>
-    </header>
+        <p>
+            I received my BASc in Mechatronics Engineering with an Option in Computing from UW. 
+            In the past, I have worked on Tesla’s AutoPilot hardware, BlackBerry’s QNX OS, 
+            Forcen’s sensor modules, InvisionAI’s deep learning stack, and PerkinElmer’s ML R&D.
+        </p>
+    </section>
+
+    <section id="previous">
+        <h2>Previous Affiliations</h2>
+        <ul>
+            <li>Student @ <a href="https://uwaterloo.ca/">University of Waterloo</a> | Dept. of Mechanical and Mechatronics Engineering</li>
+            <li>Intern @ <a href="https://www.tesla.com/autopilot">Tesla Motors</a> | AutoPilot Hardware (Full Self-Driving System)</li>
+            <li>Intern @ <a href="https://blackberry.qnx.com">BlackBerry</a> | QNX Sensor Framework</li>
+            <li>Intern @ <a href="https://forcen.tech/">Forcen</a> | Force Sensing Module R&D</li>
+            <li>Intern @ <a href="https://invision.ai">InvisionAI</a> | High-Performance Deep Learning</li>
+            <li>Intern @ <a href="https://revvitysignals.com/">PerkinElmer</a> (now Revvity Signals) | Machine Learning R&D</li>
+            <li>BL4S Alumnus @ <a href="https://beamlineforschools.cern/">CERN</a> | Search for Fractionally-Charged Particles (Using 10GeV/c Proton Beam)</li>
+        </ul>
+    </section>
 
     <section id="projects">
-        <h2>Selected Projects</h2>
+        <h2>Side Projects</h2>
         <p>
-            Sometimes I build things for fun - here are a few samples:
+            One of my hobbies which eventually turned into my career is 'making'. Most of my recent work
+            is non-disclosable, but here I can share a small collection of personal and school projects.
         </p>
         <ul>
             {% for post in site.categories.projects %}
