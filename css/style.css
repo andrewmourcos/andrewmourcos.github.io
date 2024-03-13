@@ -54,7 +54,7 @@ p {
 }
 
 p a {
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 section {

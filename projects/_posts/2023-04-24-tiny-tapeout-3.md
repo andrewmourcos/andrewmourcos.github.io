@@ -1,28 +1,29 @@
 ---
 layout: projects
-title: Open Source ASIC Tapeout
+title: Hello World of ASIC Tapeout
 tag: Electronics
 description: My first digital design being manufactured on a real chip.
 tools: Verilog, Yosys
 img: Media/projects/tt3/tt3-my-cell2d.png
 hidden: true
 ---
-View the tapeout for my parallel-to-serial converter in 3D <a href="https://andrewmourcos.github.io/tt03-verilog-demo/">here</a>
+View the tapeout of my section of the chip in 3D <a href="https://andrewmourcos.github.io/tt03-verilog-demo/">here</a>.
 
-I recently heard about the Tiny Tapeout 3 program, which allows hobbyists and students to have their digital ASIC designs manufactured on a real chip. As someone who is interested in digital electronics, I was excited to take on the challenge.
+I recently heard about the Tiny Tapeout 3 program, which allows hobbyists and students to have their digital ASIC designs manufactured on a real chip. As someone who's interested in digital electronics, I really liked the concept.
 
 # My Design
-The only problem was that I only heard about the program the morning of the submission deadline. Despite the short notice, I was determined to submit a design so I got to work.
+The only problem was that I only heard about the program the morning of the submission deadline. Despite the short notice, I was determined to submit even a small design, so I got to work.
 
-The process was relatively straight-forward: I wrote a short Verilog program for a parallel to serial converter and did some basic tests in a few hours. Then, the tools did a lot of heavy-lifting: Yosys (open source synthesis tool) used the provided standard cell library to synthesize my circuit from the code:
+The process was relatively straight-forward: I wrote a short Verilog program to take parallel bits and spit them out serially (simple enough). These days, the tools do a lot of heavy-lifting: Yosys (the open source synthesis tool) generated the physical circuit from the Verilog program:
+
 <img src="/Media/projects/tt3/tt3-my-cell2d.png">
-*2D render of my parallel to serial converter; I/O pins along left edge*
+*2D render of the parallel to serial converter; I/O pins along left edge*
 
-I didn't have enough time to do proper testbench tests - so it may have issues - but I managed to get a functional build at the last possible second. This was the timestamp on my last commit (designs due at 2p):
+I didn't have enough time to create a proper testbench - so it may have issues - but I managed to get a functional build at the last possible second. This was the timestamp on my last commit (designs due at 2p):
 <img src="/Media/projects/tt3/tt3-final-commit-time.png">
 
 ## Stats
-In the end, my design only used about 6.54% of the allocated chip area of 150 x 170 um - but not too bad for a last minute submission. Here's a breakdown of the used cells:
+In the end, my design only used about 6.54% of the allocated chip area of 150 x 170 um - but not too bad for a last minute submission. Another neat thing about how tiny-tapeout was organized: the build management system is setup to generate a breakdown of the used cells:
 
 | Category    | Cells                                                        | Count |
 | ----------- | ------------------------------------------------------------ | ----- |
@@ -46,4 +47,4 @@ Thankfully, I made the cutoff and made it onto the final chip tapeout that has b
 <img src="/Media/projects/tt3/tinytapeout_numbered.png">
 *249 designs combined on one die in a scanchain - my section is #25!*
 
-Despite the short notice, the Tiny Tapeout 3 program was a great experience, and I'm grateful for the opportunity to have my first digital ASIC design manufactured on a real chip. I'm looking forward to getting the breakout board back and running some tests!
+Can't wait to get the manufactured chip on a breakout board and run some tests!
