@@ -1,8 +1,8 @@
 ---
 layout: projects
-title: Bio-mimetic Fish Robot
+title: Lamper, Robot Platform
 tag: Robotics
-description: Design of a Bio-mimetic robot platform for marine ecology research
+description: A bio-inspired robot platform for marine ecology research
 tools: 
 img: Media/projects/lamperlabs/lamper_assembly.png
 video: /Media/projects/lamperlabs/lamper-land-test.mp4
@@ -24,13 +24,13 @@ The robot itself was architected around the Nvidia Jetson single-board computer 
 </video>
 *Propulsion system demos*
 
-I worked with our mechanical lead (Kyle) closely to push for a single-motor propulsion system. As the motor completes a full revolution, the custom gear box transfers torque to two oppositely rotating turntables. Wires routed through the ribs of the tail are subject to alternating tension and slack to produce a tuna-like swimming pattern. I mainly helped with back-of-the-envelope mechanism sketches and kinematic modeling, while Kyle produced the actual CAD.
+A big mechanical challenge was in designing a single-motor propulsion system, led by my friend Kyle Tam. It definitely made the project more complex, but allowed us to produce an accurate fish swimming stroke, lower actuator costs and achieve the best mechanical efficiency. As the motor completes a full revolution, the custom gear box transfers torque to two oppositely rotating turntables. Wires routed through the ribs of the tail are subject to alternating tension and slack to produce a tuna-like swimming pattern.
 
-I also learned how to use SolidWork's hydrodynamics FEA tools as we wanted to estimate the pressure that our sealant would need to withstand given certain conditions:
+Also took this project as an excuse to use FEA tools when we wanted an estimate of hydrodynamic pressure the fish would need to withstand.
 <img src="/Media/projects/lamperlabs/lamper-pressure1.png">
 *Pressure due to hydrodynamic forces*
 
-## Custom SW Framework
+## Software
 Let me be the first to say that we wrote a metric ton of code for this project - a lot of which was from scratch. In total, there were three code bases that our team maintained:
 1. LamperCloud: Web app to control and view the fish's POV in real-time [Owner: Kiran]
 2. Nemo: Multi-threaded program that lives on the Nvidia Jetson [Owner: Me]
@@ -39,7 +39,7 @@ Let me be the first to say that we wrote a metric ton of code for this project -
 <img src="/Media/projects/lamperlabs/lamper-cloud.png">
 *Web app for controlling and viewing fish POV in real-time*
 
-I focused on Nemo, which was a multi-threaded program written in C for the Nvidia Jetson. It carries out the video streaming pipeline to LamperCloud, receives robot controls over websockets, and sends motor commands to the auxiliary controller over UART. Looking back - an insane amount of work went into this.
+I focused on Nemo, which was a multi-threaded program written in C/C++ for the Nvidia Jetson. It carries out the video streaming pipeline fed to LamperCloud, receives robot controls over websockets, and sends motor commands to the auxiliary controller over UART.
 
 <img src="/Media/projects/lamperlabs/nemo-block-diagram.png">
 *Nemo block diagram*
