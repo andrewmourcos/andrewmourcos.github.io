@@ -18,30 +18,6 @@ layout: main
         gtag('config', 'G-DED6JYJ5PB');
     </script>
 
-    <!-- smooth scrolling script -->
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-                    // Store hash
-                    var hash = this.hash;
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 1200, function () {
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
-
     <meta charset="utf-8">
     <title>Andrew Mourcos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,102 +29,14 @@ layout: main
 </head>
 
 <body>
-    <div id="particles-js"></div>
-    <script type="text/javascript" src="Particles/particle-config.js"></script>
-
     <section id="about">
-        <h1>Andrew Mourcos</h1>
-        <hr style="width: 170px; height:1px; border:none;color:#333;background-color:#333;">
-        <div id="imgleft">
-            <img src="Media/profile.jpg">
-            <div>
-                <br>
-                <h3>About</h3>
-                <ul>
-                    <li>GitHub: <a href="https://github.com/andrewmourcos">@andrewmourcos</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/andrew-mourcos/">in/andrew-mourcos</a></li>
-                </ul>
-                <p>
-                    I'm a system design engineer for high-performance computing hardware 
-                    at Nvidia. Before that, I studied mechatronics engineering at 
-                    <a href="https://uwaterloo.ca/">uWaterloo</a>.
-                </p>
-            </div>
-        </div>
-        <p>
-            I spent 6 semesters (>2 years) working at technology companies as a university 
-            student. 
-            <br><br>
-            I contributed to <a href="https://www.tesla.com/autopilot">Tesla's</a> AutoPilot 
-            electronics, <a href="https://blackberry.qnx.com">BlackBerry's</a> automotive 
-            operating system, <a href="https://forcen.tech/">Forcen's</a> robotic 
-            electronics/firmware, <a href="https://invision.ai">InvisionAI's</a> deep learning 
-            stack, and <a href="https://revvitysignals.com/">PerkinElmer's</a> AI R&D.
-            <br><br>
-            In highschool, I built robots (one that beat Georgia Tech) and used
-            <a href="https://www.worldscientific.com/doi/pdf/10.1142/S2661339520500079">
-                a 10GeV/c proton beam at CERN
-            </a>.
-        </p>
-    </section>
-
-    <!-- <section id="previous">
-        <h2>Previous Affiliations</h2>
-        <ul>
-            <li>Student @ <a href="https://uwaterloo.ca/">University of Waterloo</a> | Dept. of Mechanical and Mechatronics Engineering</li>
-            <li>Intern @ <a href="https://www.tesla.com/autopilot">Tesla Motors</a> | AutoPilot Hardware (Full Self-Driving System)</li>
-            <li>Intern @ <a href="https://blackberry.qnx.com">BlackBerry</a> | QNX Sensor Framework</li>
-            <li>Intern @ <a href="https://forcen.tech/">Forcen</a> | Force Sensing Module R&D</li>
-            <li>Intern @ <a href="https://invision.ai">InvisionAI</a> | High-Performance Deep Learning</li>
-            <li>Intern @ <a href="https://revvitysignals.com/">PerkinElmer</a> (now Revvity Signals) | Machine Learning R&D</li>
-            <li>BL4S Alumnus @ <a href="https://beamlineforschools.cern/">CERN</a> | Search for Fractionally-Charged Particles (Using 10GeV/c Proton Beam)</li>
-        </ul>
-    </section> -->
-
-    <section id="projects">
-        <h2>Side Projects</h2>
-        <p>
-            Most of my recent engineering work is private, but every once in a while I take 
-            on a hobby/personal project that I get to share:
-        </p>
-        <ul>
-            {% for post in site.categories.projects %}
-            {% if post.hidden != true %}
-            <div class="container">
-                <a href="{{post.url}}">
-                    <li>
-                        {% if post.video %}
-                            <video src="{{ post.video }}" autoplay loop muted playsinline></video>
-                        {% else %}
-                            <img src="{{ post.img }}">
-                        {% endif %}
-                        <div class="overlay">
-                            <h4>{{post.title}}</h4>
-                            <hr width="150px">
-                            <p><i> {{ post.tag}} </i></p>
-                            <br><br>
-                            <p>{{ post.description | truncatewords:15 }}</p>
-                            <br>
-                            <p><i>Read more →</i></p>
-                        </div>
-                    </li>
-                </a>
-            </div>
-            {% endif %}
-            {% endfor %}
-        </ul>
-        <div class="btn">
-            <a href="/projects.html">See More</a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <span>Andrew Mourcos © 2017-2023</span>
-        <p style="font-weight: 200;"><a href="https://github.com/andrewmourcos">GITHUB</a> | <a
-                href="https://www.linkedin.com/in/andrew-mourcos/">LINKEDIN</a></p>
         <br>
+        <p>                
+            I no longer need this portfolio website. Maybe I will turn it into a blog one day.
+            <br><br>
+            - <a href="https://www.linkedin.com/in/andrew-mourcos/">LinkedIn</a>
+        </p>
     </section>
-
 </body>
 
 </html>
